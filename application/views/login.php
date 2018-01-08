@@ -1,6 +1,6 @@
 <center><div class="container" style="min-height: 500px; margin-top: 100px;">
 	
-<div class="card" style="width: 38rem; padding-top: 30px; padding-bottom: 30px;">
+<div class="card" style="width: 38rem; padding-top: 30px; padding-bottom: 30px; background-color: whitesmoke;">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
   <div class="card-body">
     <h2 class="card-title">Login</h2>
