@@ -22,7 +22,7 @@
     <link href="<?php echo base_url() ?>assets/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo base_url() ?>assets/css/creative.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/creative.css" rel="stylesheet">
 
   </head>
 

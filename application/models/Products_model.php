@@ -36,7 +36,18 @@ class Products_model extends CI_Model {
         $query = $this->db->get();
         return $result = $query->result();		
 	}
+
+	public function add_item($image){
+
+		$data = array(
+
+		    'product_name' => $this->input->post('product_name', TRUE),
+		    'product_price' => $this->input->post('product_price',TRUE),
+		    'description' => $this->input->post('description',TRUE),
+		    'image' => $image
+		    );
+
+	    $this->db->insert('products',$data);
+	}
 }
 
-/* End of file Products_model */
-/* Location: ./application/models/Products_model */
