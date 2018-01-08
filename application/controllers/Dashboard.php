@@ -72,11 +72,14 @@ class Dashboard extends CI_Controller {
 		# code...
 	}
 
-	public function remove_item()
+	public function remove_item($id)
 	{
-		$id = $this->input->post('id');
+		// $id = $this->input->post('id');
+		  $this->db->where('id',$id);
+	      $this->db->delete('products');
+	      redirect('Dashboard/add_item');
 
-		$delitem = $this->Dashboard_model->delete_item($id);		
+		// $delitem = $this->Dashboard_model->delete_item($id);		
 	}
 
 }

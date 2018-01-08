@@ -10,11 +10,11 @@ class Dashboard_model extends CI_Model {
 	    return $query->result();
 	}
 
-	function delete_item($id)
-	{
-		$this->db->where('product_id', $id);
-		return $this->db->delete('products');		
-	}
+	// function delete_item($id)
+	// {
+	// 	$this->db->where('product_id', $id);
+	// 	return $this->db->delete('products');		
+	// }
 
 }
 

@@ -1,3 +1,10 @@
+<?php if ($this->session->userdata('loggedin')) {
+  include 'includes/loggedin_header.php';
+}
+else{
+   redirect('Login');
+}
+?>
 <div class="container" style="margin-top: 100px;">
     <div class="row">	            		            	
     	<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px; margin-bottom: 100px;">
@@ -30,7 +37,7 @@
 									<td><?php echo $row->product_name ?></td>
 									<td><?php echo $row->product_price ?></td>
 									<td><button class="btn btn-warning btn-sm">Update</button></td>
-									<td><button type="button" class="btn btn-danger btn-sm btn-confirm" dataid=<?php echo $row->product_id?> data-toggle="modal">Delete</button></td>
+									<td><a href="<?php echo base_url('Dashboard/remove_item/'.$row->product_id) ?>" type="button" class="btn btn-danger btn-sm" onclick="return checkDelete()">Delete</a></td>
 								</tr>
 								<?php endforeach; ?>
 							</tbody>
