@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1:3312
--- Generation Time: Jan 08, 2018 at 08:04 AM
--- Server version: 10.1.21-MariaDB
--- PHP Version: 7.1.1
+-- Host: 127.0.0.1
+-- Generation Time: Jan 08, 2018 at 11:16 AM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 7.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -30,6 +30,7 @@ CREATE TABLE `products` (
   `product_id` int(11) NOT NULL,
   `product_name` varchar(50) NOT NULL,
   `description` varchar(1000) NOT NULL,
+  `product_price` varchar(20) NOT NULL,
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -37,13 +38,13 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`product_id`, `product_name`, `description`, `image`) VALUES
-(1, 'product 1', 'description 1', 'image 1'),
-(2, 'product 2', 'description 2', 'image 2'),
-(3, 'product 3', 'description 3', 'image 3'),
-(4, 'product 4', 'description 4', 'image 4'),
-(5, 'product 5', 'description 5', 'image 5'),
-(6, 'product 6', 'description 6', 'image 6');
+INSERT INTO `products` (`product_id`, `product_name`, `description`, `product_price`, `image`) VALUES
+(1, 'product 1', 'description 1', '10000', 'no_image.png'),
+(2, 'product 2', 'description 2', '20000', 'no_image.png'),
+(3, 'product 3', 'description 3', '30000', 'no_image.png'),
+(4, 'product 4', 'description 4', '40000', 'no_image.png'),
+(5, 'product 5', 'description 5', '50000', 'no_image.png'),
+(6, 'product 6', 'description 6', '60000', 'no_image.png');
 
 -- --------------------------------------------------------
 
