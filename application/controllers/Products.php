@@ -27,7 +27,7 @@ class Products extends CI_Controller {
 
 	public function browse()
 	{
-		$this->load->view('includes/header');
+		$this->load->view('includes/inner_header');
 		$this->load->view('products');
 	}
 }
