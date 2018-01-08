@@ -1,3 +1,13 @@
+<?php if ($this->session->userdata('loggedin')) {
+  include 'includes/loggedin_header.php';
+}
+else{
+   include 'includes/inner_header.php';
+}
+
+?>
+
+
 <center><div class="container" style="min-height: 500px; margin-top: 100px;">
 	
 <div class="card" style="width: 38rem; padding-top: 30px; padding-bottom: 30px; background-color: whitesmoke;">

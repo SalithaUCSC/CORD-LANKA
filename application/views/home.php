@@ -1,6 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
+
+
+<?php if ($this->session->userdata('loggedin')) {
+  include 'includes/loggedin_header.php';
+}
+else{
+   include 'includes/inner_header.php';
+}
+
+?>
+
+
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
