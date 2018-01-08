@@ -24,6 +24,9 @@
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url() ?>assets/css/creative.min.css" rel="stylesheet">
 
+    <!-- dataTabales CSS -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dataTables.bootstrap4.min.css">
+
   </head>
 
   <body id="page-top">
