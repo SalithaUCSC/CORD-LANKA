@@ -173,8 +173,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <!-- <h2 class="mb-4">Free Download at Start Bootstrap!</h2> -->
+        <a class="btn btn-light btn-xl sr-button" style="margin-top: -110px;" href="<?php echo base_url()?>Products/browse">OUR PRODUCTS</a>
       </div>
     </section>
 
