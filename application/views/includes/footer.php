@@ -9,19 +9,19 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="<?php echo base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo base_url() ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
     
     <!-- dataTables JS -->
     <script src="<?php echo base_url() ?>assets/js/jquery.dataTables.min.js"></script>
     <script src="<?php echo base_url() ?>assets/js/dataTables.bootstrap4.min.js"></script>
-
+    <script src="<?php echo base_url() ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="<?php echo base_url() ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="<?php echo base_url() ?>assets/vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="<?php echo base_url() ?>assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="<?php echo base_url() ?>assets/js/creative.min.js"></script>
+
 
     <script>
       $(document).ready(function(){
@@ -40,6 +40,10 @@
           // }
 
           // load_products(1);
+
+            $('#pro_table').DataTable({
+                "searching" : true
+            });
 
             $('#searchBox').keyup(function(){   
                 var keyword = $('#searchBox').val(); 
@@ -83,7 +87,72 @@
              });
 
             });
-      });
+
+      // });
+
+            // $(document).ready( function() {
+          $(document).on('change', '.btn-file :file', function() {
+          var input = $(this),
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+          input.trigger('fileselect', [label]);
+          });
+
+          $('.btn-file :file').on('fileselect', function(event, label) {
+              
+              var input = $(this).parents('.input-group').find(':text'),
+                  log = label;
+              
+              if( input.length ) {
+                  input.val(log);
+              } else {
+                  if( log ) alert(log);
+              }
+            
+          });
+          function readURL(input) {
+              if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+                  
+                  reader.onload = function (e) {
+                      $('#img-upload').attr('src', e.target.result);
+                  }
+                  
+                  reader.readAsDataURL(input.files[0]);
+              }
+          }
+
+          $("#imgInp").change(function(){
+              readURL(this);
+          }); 
+
+        $('#userRow').on('click','.btn-confirm', function(){
+          var id = $(this).attr('dataid');
+          $('#del_modal').data('id',id).modal('show');
+        });
+
+        $('#btn-delete').on('click', function(){
+          var id = $('#del_modal').data('id');
+          $.ajax({
+            url: "<?php echo base_url()?>Dashboard/remove_item",
+            method: "POST",
+            data:{id:id},
+            dataType: 'json',
+            success: function(data){
+              alert('deleted');
+              //remove the row
+              $('#rowId-'+id).remove();
+              //hide the modal
+              $('#del_modal').modal('hide');        
+            },
+            error: function() {
+              alert('error');
+              $('#del_modal').modal('hide');  
+            }
+          });
+        });         
+
+        });
+
     </script>
   </body>
 
