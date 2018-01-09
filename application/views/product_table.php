@@ -37,7 +37,7 @@ else{
 									<td><?php echo $row->product_name ?></td>
 									<td><?php echo $row->product_price ?></td>
 									<td><button class="btn btn-warning btn-sm">Update</button></td>
-									<td><a href="<?php echo base_url('Dashboard/remove_item/'.$row->product_id) ?>" type="button" class="btn btn-danger btn-sm" onclick="return checkDelete()">Delete</a></td>
+									<td><a href="<?php echo base_url() ?>" type="button" class="btn btn-danger btn-sm" onclick="return checkDelete()">Delete</a></td>
 								</tr>
 								<?php endforeach; ?>
 							</tbody>
@@ -56,13 +56,10 @@ else{
     <div class="modal-content">
       	<div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Delete data</h4>
+        <h6 class="modal-title">Delete data</h6>
       	</div>
       	<div class="modal-body">
       		<h5 style="color: red;">Are you sure?</h5>
-           <!--  <form method="POST" id="form_create">
-			
-			</form> -->
       	</div>
       	<div class="modal-footer">
 	      	<button class="btn btn-danger" id="btn-delete" data-target="#del_modal">Yes</button>
