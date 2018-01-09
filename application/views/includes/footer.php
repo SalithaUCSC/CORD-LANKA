@@ -25,25 +25,14 @@
 
     <script>
       $(document).ready(function(){
-          // function load_products(page)
-          // {
-          //   $.ajax({
-          //     url: "<?php echo base_url() ?>Products/pagination"+page,
-          //     method: "GET",
-          //     dataType: "json",
-          //     success: function(data){
-          //       $('#products_div').html(data.products_div);
-          //       $('#pagination_link').html(data.pagination_link);
-
-          //     }
-          //   })
-          // }
-
-          // load_products(1);
 
             $('#pro_table').DataTable({
                 "searching" : true
             });
+
+            function checkDelete(){
+                return confirm('Are you sure?');
+            }       
 
             $('#searchBox').keyup(function(){   
                 var keyword = $('#searchBox').val(); 
@@ -88,9 +77,6 @@
 
             });
 
-      // });
-
-            // $(document).ready( function() {
           $(document).on('change', '.btn-file :file', function() {
           var input = $(this),
             label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
@@ -125,31 +111,33 @@
               readURL(this);
           }); 
 
-        $('#userRow').on('click','.btn-confirm', function(){
-          var id = $(this).attr('dataid');
-          $('#del_modal').data('id',id).modal('show');
-        });
 
-        $('#btn-delete').on('click', function(){
-          var id = $('#del_modal').data('id');
-          $.ajax({
-            url: "<?php echo base_url()?>Dashboard/remove_item",
-            method: "POST",
-            data:{id:id},
-            dataType: 'json',
-            success: function(data){
-              alert('deleted');
-              //remove the row
-              $('#rowId-'+id).remove();
-              //hide the modal
-              $('#del_modal').modal('hide');        
-            },
-            error: function() {
-              alert('error');
-              $('#del_modal').modal('hide');  
-            }
-          });
-        });         
+
+        // $('#userRow').on('click','.btn-confirm', function(){
+        //   var id = $(this).attr('dataid');
+        //   $('#del_modal').data('id',id).modal('show');
+        // });
+
+        // $('#btn-delete').on('click', function(){
+        //   var id = $('#del_modal').data('id');
+        //   $.ajax({
+        //     url: "<?php echo base_url()?>Dashboard/remove_item",
+        //     method: "POST",
+        //     data:{id:id},
+        //     dataType: 'json',
+        //     success: function(data){
+        //       alert('deleted');
+        //       //remove the row
+        //       $('#rowId-'+id).remove();
+        //       //hide the modal
+        //       $('#del_modal').modal('hide');        
+        //     },
+        //     error: function() {
+        //       alert('error');
+        //       $('#del_modal').modal('hide');  
+        //     }
+        //   });
+        // });         
 
         });
 

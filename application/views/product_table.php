@@ -1,3 +1,10 @@
+<?php if ($this->session->userdata('loggedin')) {
+  include 'includes/loggedin_header.php';
+}
+else{
+   redirect('Login');
+}
+?>
 <div class="container" style="margin-top: 100px;">
     <div class="row">	            		            	
     	<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px; margin-bottom: 100px;">
@@ -30,7 +37,7 @@
 									<td><?php echo $row->product_name ?></td>
 									<td><?php echo $row->product_price ?></td>
 									<td><button class="btn btn-warning btn-sm">Update</button></td>
-									<td><button type="button" class="btn btn-danger btn-sm btn-confirm" dataid=<?php echo $row->product_id?> data-toggle="modal">Delete</button></td>
+									<td><a href="<?php echo base_url() ?>" type="button" class="btn btn-danger btn-sm" onclick="return checkDelete()">Delete</a></td>
 								</tr>
 								<?php endforeach; ?>
 							</tbody>
@@ -49,13 +56,10 @@
     <div class="modal-content">
       	<div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Delete data</h4>
+        <h6 class="modal-title">Delete data</h6>
       	</div>
       	<div class="modal-body">
       		<h5 style="color: red;">Are you sure?</h5>
-           <!--  <form method="POST" id="form_create">
-			
-			</form> -->
       	</div>
       	<div class="modal-footer">
 	      	<button class="btn btn-danger" id="btn-delete" data-target="#del_modal">Yes</button>

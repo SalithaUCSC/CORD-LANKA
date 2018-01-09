@@ -32,7 +32,7 @@ class Dashboard extends CI_Controller {
 		else {
 
 			//image
-			$config['upload_path'] = '/assets/img/products';
+			$config['upload_path'] = './assets/img/products';
 			$config['allowed_types'] = 'gif|jpg|png|jpeg';
 			$config['max_size'] = '2048';
 			$config['max_width'] = '2000'; //max resolution width
@@ -72,11 +72,14 @@ class Dashboard extends CI_Controller {
 		# code...
 	}
 
-	public function remove_item()
+	public function remove_item($id)
 	{
-		$id = $this->input->post('id');
+		// $id = $this->input->post('id');
+		  $this->db->where('id',$id);
+	      $this->db->delete('products');
+	      redirect('Dashboard/add_item');
 
-		$delitem = $this->Dashboard_model->delete_item($id);		
+		// $delitem = $this->Dashboard_model->delete_item($id);		
 	}
 
 }

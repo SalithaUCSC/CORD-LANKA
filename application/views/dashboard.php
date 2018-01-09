@@ -42,7 +42,7 @@ else{
 									<td><?php echo $row->product_name ?></td>
 									<td><?php echo $row->product_price ?></td>
 									<td><button class="btn btn-warning btn-sm">Update</button></td>
-									<td><button type="button" class="btn btn-danger btn-sm btn-confirm" dataid=<?php echo $row->product_id?> data-toggle="modal">Delete</button></td>
+									<td><a href="<?php echo base_url();?>/site/Dashboard/remove_item/<?php echo $row->product_id ?>"><button type="button" class="btn btn-danger btn-sm btn-confirm" data-toggle="modal">Delete</button></a></td>
 								</tr>
 								<?php endforeach; ?>
 							</tbody>
