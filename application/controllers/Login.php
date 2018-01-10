@@ -5,21 +5,9 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		// $this->load->view('includes/inner_header');
 		$this->load->view('login');
 		$this->load->view('includes/footer');
 	}
-
-
-	public function dashboard()
-	{
-		// $this->load->view('includes/loggedin_header');
-		$this->load->model('Dashboard_model');
-		$data['allitems'] = $this->Dashboard_model->get_all_products();
-		$this->load->view('dashboard', $data);
-		$this->load->view('includes/footer');
-	}
-
 
 	public function LoginUser()
 	{
@@ -48,7 +36,7 @@ class Login extends CI_Controller {
 
           		$this->session->set_userdata($user_data);
 
-          		redirect('Login/dashboard');
+          		redirect('Dashboard');
           	}
 
           	else{
@@ -57,12 +45,6 @@ class Login extends CI_Controller {
               	redirect('Login');
           	}
         }
-	}
-
-	public function logout(){
-		$this->session->unset_userdata($user_data);
-		session_unset();
-		redirect(base_url());
 	}
 
 }

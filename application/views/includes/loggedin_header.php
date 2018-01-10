@@ -53,10 +53,10 @@
               <a class="nav-link js-scroll-trigger" href="<?php echo base_url() ?>#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url()?>Login/dashboard">Dashboard</a>
+              <a class="nav-link" href="<?php echo base_url()?>Dashboard">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url()?>Login/logout">Logout</a>
+              <a class="nav-link" href="<?php echo base_url()?>Dashboard/logout">Logout</a>
             </li>             
           </ul>
         </div>

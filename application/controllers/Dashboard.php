@@ -10,6 +10,14 @@ class Dashboard extends CI_Controller {
 		
 	}
 
+	public function index()
+	{
+		$this->load->view('includes/loggedin_header');
+		$data['allitems'] = $this->Dashboard_model->get_all_products();
+		$this->load->view('dashboard', $data);
+		$this->load->view('includes/footer');		
+	}
+
 	public function add_item()
 	{
 		// $this->load->view('includes/inner_header');
@@ -59,6 +67,12 @@ class Dashboard extends CI_Controller {
 		
 	}
 
+	public function logout(){
+		$this->session->unset_userdata($user_data);
+		session_unset();
+		redirect(base_url());
+	}
+
 	public function view_items()
 	{
 		$this->load->view('includes/loggedin_header');
@@ -67,17 +81,30 @@ class Dashboard extends CI_Controller {
 		$this->load->view('includes/footer');		
 	}
 
-	public function edit_item()
+	public function edit_item($product_id)
 	{
-		# code...
+		if (isset($_POST['update'])) {
+
+			if ($this->Dashboard_model->update($product_id)) {
+
+				$this->session->set_flashdata('success','Product is updated');
+				redirect('Dashboard/edit_item/'.$product_id , 'refresh');
+
+			} else {
+				$this->session->set_flashdata('error','Product is not updated');
+				redirect('Dashboard/edit_item/'.$product_id , 'refresh');
+			}
+		}
+			$data['row'] = $this->Dashboard_model->edit($product_id);
+			$this->load->view('edit_item',$data);
 	}
 
 	public function remove_item($id)
 	{
 		// $id = $this->input->post('id');
-		  $this->db->where('id',$id);
-	      $this->db->delete('products');
-	      redirect('Dashboard/add_item');
+
+		$this->Dashboard_model->delete_item($id);
+		redirect('Dashboard/add_item' , 'refresh');
 
 		// $delitem = $this->Dashboard_model->delete_item($id);		
 	}

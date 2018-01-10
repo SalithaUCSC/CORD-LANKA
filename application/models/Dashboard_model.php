@@ -10,11 +10,32 @@ class Dashboard_model extends CI_Model {
 	    return $query->result();
 	}
 
-	// function delete_item($id)
-	// {
-	// 	$this->db->where('product_id', $id);
-	// 	return $this->db->delete('products');		
-	// }
+	public function delete_item($id)
+	{
+		  $this->db->where('product_id',$id);
+	      $this->db->delete('products');
+	      redirect('Dashboard/add_item');		
+	}
+    public function edit($product_id) {
+
+        $this->db->where('product_id',$product_id);
+        $query = $this->db->get_where('products', array('product_id' => $product_id));
+        return $query->row();
+
+    }
+	public function update($product_id)
+	{
+        $data = array(
+        'product_id' => $this->input->post('product_id'),
+        'product_name' => $this->input->post('product_name'),
+        'description' => $this->input->post('description'),
+        'product_price' => $this->input->post('product_price'),
+        'image' =>$image
+        );
+        $this->db->where('product_id',$product_id);
+        $this->db->update('products',$data);
+        return $product_id;		
+	}
 
 }
 
