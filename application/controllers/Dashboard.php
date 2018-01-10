@@ -96,6 +96,7 @@ class Dashboard extends CI_Controller {
 		}
 			$data['row'] = $this->Dashboard_model->edit($product_id);
 			$this->load->view('edit_item',$data);
+			$this->load->view('includes/footer');
 	}
 
 	public function remove_item($id)

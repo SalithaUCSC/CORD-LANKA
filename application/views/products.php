@@ -2,11 +2,11 @@
   include 'includes/loggedin_header.php';
 }
 else{
-   redirect('Login');
+   include 'includes/header.php';
 }
 
 ?>
-<div class="container" style="margin-top: 100px;">
+<div class="container" style="margin-top: 100px;min-height: 1000px;">
 	<div class="row">
 		<div class="col-lg-8"><h2 id="card-head">All Products</h2></div><br><br><br>
 		<div class="col-lg-4">
@@ -18,7 +18,7 @@ else{
         </div>
 	</div><br>
 	<div class="row">
-		<?php foreach ($products as $item) : ?>
+		<?php foreach ($product_items as $item) : ?>
 			<div class="col-lg-4">
 				<div class="card" style="width: 22rem; margin-bottom: 20px;"><br>
 				  <center><img class="card-img-top" style="width: 120px;height: 150px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" alt="Card image cap"></center>	
@@ -30,9 +30,18 @@ else{
 				  </div>
 				</div>
 			</div>	
-		<?php endforeach; ?>
-		<!-- <?php echo $link; ?> -->
+		<?php endforeach; ?>	
 	</div>
+	<br>
+
+	<div class="row">
+		<nav aria-label="Page navigation example" style="margin: auto;">
+		    <ul class="pagination">
+		    	<?php echo $link; ?>
+		    </ul>
+		</nav>
+	</div>
+	<br>
 </div>
 
 <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 60px;">

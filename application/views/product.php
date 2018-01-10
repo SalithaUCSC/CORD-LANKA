@@ -2,7 +2,7 @@
   include 'includes/loggedin_header.php';
 }
 else{
-   redirect('Login');
+   include 'includes/header.php';
 }
 
 ?>
@@ -29,7 +29,7 @@ else{
 						</table>
 					</div>				
 				</div>
-
+			
 	        </div>
 		</div>
 		<br>
