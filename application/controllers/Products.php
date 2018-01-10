@@ -24,12 +24,21 @@ class Products extends CI_Controller {
 		$resultset = $this->Products_model->search_product($keyword);
 		
 		if($resultset->num_rows()<=0) {
-			$arr_res.='<div style="width: 200px !important; position: relative; z-index:3;"><li style="width: 200px;" class="list-group-item text-center"> No records </li></div>';
+			$arr_res.='<li style="width:200px;" class="list-group-item text-center"> No records </li>';
 		}
 		else {
 			foreach($resultset->result_array() as $row)
         	{
-	          $arr_res .= '<li  style="width: 200px !important; z-index: 5;overflow: hidden;" class="list-group-item">'.$row["product_name"].'</li>';
+	          $arr_res .= '<li style="width:200px; position: absolute;
+						  text-indent: 2px;
+						  cursor: pointer;
+						  z-index: 1000;
+						  border: 1px solid #cccccc;
+						  border: 1px solid rgba(0, 0, 0, 0.15);
+						  border-radius: 4px;
+						  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+						  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+						  background-clip: padding-box;" class="list-group-item">'.$row["product_name"].'</li>';
         	}
         	
 		}			
