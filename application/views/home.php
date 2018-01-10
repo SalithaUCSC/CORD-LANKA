@@ -18,13 +18,13 @@ else{
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Free Bootstrap Themes</strong>
+              <strong>WELCOME to CodeLanka</strong>
             </h1>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            <p class="text-faded mb-5">You are at the ideal place for searching traditional items</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Start with us</a>
           </div>
         </div>
       </div>

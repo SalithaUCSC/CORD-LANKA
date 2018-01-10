@@ -10,11 +10,22 @@ class Dashboard_model extends CI_Model {
 	    return $query->result();
 	}
 
+	public function add_item($image)
+	{
+        $data = array(
+        'product_id' => $this->input->post('product_id'),
+        'product_name' => $this->input->post('product_name'),
+        'description' => $this->input->post('description'),
+        'product_price' => $this->input->post('product_price'),
+        'image' =>$image
+        );
+        $this->db->insert('products',$data);			
+	}
+
 	public function delete_item($id)
 	{
 		  $this->db->where('product_id',$id);
-	      $this->db->delete('products');
-	      redirect('Dashboard/add_item');		
+	      $this->db->delete('products');		
 	}
     public function edit($product_id) {
 

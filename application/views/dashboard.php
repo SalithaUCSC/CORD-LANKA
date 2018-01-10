@@ -13,7 +13,15 @@ else{
 	<!-- <a href="<?php echo base_url() ?>Dashboard/view_items "><button class='btn btn-primary'>View Products</button></a> -->
 
     	<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px; margin-bottom: 100px;">
-			<div class="text-center"><h2 id="card-head">Products List</h2></div><br>
+    		<?php if ($this->session->flashdata('success')) {?>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <?php echo $this->session->flashdata('success'); ?>
+                </div>
+            <?php  } ?>
+			<div class="text-center"><h2 id="card-head">PRODUCTS LIST</h2></div><br>
 			<br>
 			<div class="row">													
 				<!-- <div class="col-lg-2"></div> -->
@@ -42,7 +50,7 @@ else{
 									<td><?php echo $row->product_name ?></td>
 									<td><?php echo $row->product_price ?></td>
 									<td><a class="btn btn-warning btn-sm" href="<?php echo base_url();?>Dashboard/edit_item/<?php echo $row->product_id ?>" name="update">Update</a></td>
-									<td><a href="<?php echo base_url();?>Dashboard/remove_item/<?php echo $row->product_id ?>"><button type="button" class="btn btn-danger btn-sm btn-confirm" data-toggle="modal">Delete</button></a></td>
+									<td><a href="<?php echo base_url();?>Dashboard/remove_item/<?php echo $row->product_id ?>"><button type="button" class="btn btn-danger btn-sm btn-confirm" onclick="return checkDelete()">Delete</button></a></td>
 								</tr>
 								<?php endforeach; ?>
 							</tbody>

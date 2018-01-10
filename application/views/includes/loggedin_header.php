@@ -27,6 +27,13 @@
     <!-- dataTabales CSS -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dataTables.bootstrap4.min.css">
 
+    <script language="JavaScript" type="text/javascript">
+        function checkDelete(){
+            return confirm('Are you sure?');
+        }
+        </script>
+
+
   </head>
 
   <body id="page-top">

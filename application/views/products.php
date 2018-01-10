@@ -1,3 +1,11 @@
+<?php if ($this->session->userdata('loggedin')) {
+  include 'includes/loggedin_header.php';
+}
+else{
+   redirect('Login');
+}
+
+?>
 <div class="container" style="margin-top: 100px;">
 	<div class="row">
 		<div class="col-lg-8"><h2 id="card-head">All Products</h2></div><br><br><br>

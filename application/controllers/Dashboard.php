@@ -20,7 +20,6 @@ class Dashboard extends CI_Controller {
 
 	public function add_item()
 	{
-		// $this->load->view('includes/inner_header');
 		$this->load->view('add_item');
 		$this->load->view('includes/footer');
 	}
@@ -33,8 +32,8 @@ class Dashboard extends CI_Controller {
 
 
 		if ($this->form_validation->run() == FALSE){
-
-			$this->load->view('Dashboard/add_item');
+			$this->load->view('add_item');
+			$this->load->view('includes/footer');
        	}
 
 		else {
@@ -55,14 +54,14 @@ class Dashboard extends CI_Controller {
 			}
 			else{
 				$data = array('upload_data' => $this->upload->data());
-				$image = $_FILES['userfile']['name'];  //name must be userfile
-				// echo '<img src = "'.base_url().'/assets/images/posts/'.$data['file_name'].'">';
-				
+				$image = $_FILES['userfile']['name'];  			
 			}
 
-			$this->load->model('Products_model');
-	        $this->Products_model->add_item($image);
+			$this->load->model('Dashboard_model');
+	        $this->Dashboard_model->add_item($image);
+	        $this->session->set_flashdata('success','Product is added');
 			redirect('Dashboard/add_item');
+
 		}
 		
 	}
@@ -92,7 +91,7 @@ class Dashboard extends CI_Controller {
 
 			} else {
 				$this->session->set_flashdata('error','Product is not updated');
-				redirect('Dashboard/edit_item/'.$product_id , 'refresh');
+				redirect('Dashboard');
 			}
 		}
 			$data['row'] = $this->Dashboard_model->edit($product_id);
@@ -104,7 +103,8 @@ class Dashboard extends CI_Controller {
 		// $id = $this->input->post('id');
 
 		$this->Dashboard_model->delete_item($id);
-		redirect('Dashboard/add_item' , 'refresh');
+		$this->session->set_flashdata('success','Product is deleted');
+		redirect('Dashboard');
 
 		// $delitem = $this->Dashboard_model->delete_item($id);		
 	}
