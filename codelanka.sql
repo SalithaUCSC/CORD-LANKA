@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 08, 2018 at 11:16 AM
+-- Generation Time: Jan 10, 2018 at 10:23 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -43,8 +43,10 @@ INSERT INTO `products` (`product_id`, `product_name`, `description`, `product_pr
 (2, 'product 2', 'description 2', '20000', 'no_image.png'),
 (3, 'product 3', 'description 3', '30000', 'no_image.png'),
 (4, 'product 4', 'description 4', '40000', 'no_image.png'),
-(5, 'product 5', 'description 5', '50000', 'no_image.png'),
-(6, 'product 6', 'description 6', '60000', 'no_image.png');
+(5, 'product 5', 'description 5""', '50000', 'no_image.png'),
+(10, 'Product 6', 'afdda""', 'e123', 'no_image.png'),
+(11, 'Product 7', 'description 7\r\n"', '1000', 'no_image.png'),
+(19, 'sdfsdf', 'dsf', '2543', 'no_image.png');
 
 -- --------------------------------------------------------
 
@@ -55,8 +57,15 @@ INSERT INTO `products` (`product_id`, `product_name`, `description`, `product_pr
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(10) NOT NULL
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `email`, `password`) VALUES
+(1, 'jayanakafonseka@gmail.com', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2');
 
 --
 -- Indexes for dumped tables
@@ -82,12 +91,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
