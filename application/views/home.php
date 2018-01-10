@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   include 'includes/loggedin_header.php';
 }
 else{
-   include 'includes/inner_header.php';
+   include 'includes/header.php';
 }
 
 ?>
