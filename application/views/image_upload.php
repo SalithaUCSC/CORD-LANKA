@@ -72,7 +72,7 @@
 
   <body id="page-top">
 
-    <div class="container" style="min-height: 500px; margin-top: 100px;">
+    <div class="container" style="min-height: 800px; margin-top: 100px;">
       
       <div class="col-lg-12">
         <div class="row">

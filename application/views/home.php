@@ -17,13 +17,13 @@ else{
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
+            <h1 class="text-uppercase" id="company-greeting">
               <strong>WELCOME to CORD LANKA</strong>
             </h1>
             <hr>
           </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">You are at the ideal place for searching traditional items</p>
+          <div class="col-lg-8 mx-auto" id="slogan">
+            <p class="text-faded mb-5">You are at the ideal place to get cords related items with attractive designs</p>
             <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">Start with us</a>
           </div>
         </div>
@@ -34,10 +34,10 @@ else{
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
+            <h2 class="section-heading text-white">WHAT ARE WE?</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <p class="text-faded mb-4">CODE LANKA is one of the best companies that manufactures and supplies Twill Tapes, Draw Cords, Polyester Cords, Piping Cords, Webbing Tapes, Mobilan Tapes, Elastic Tapes Dyeing and Tipping. We are ready to deliver you the best productions according to your designs and requirements...</p>
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
           </div>
         </div>
       </div>
@@ -56,33 +56,33 @@ else{
         <div class="row">
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-             <div class="card" style="width: 18rem;"><br>
-              <img class="card-img-top" style="width: 200px;height: 200px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/products/product.png" alt="Card image cap"><br>
+             <div class="card" style="width: 18rem;">
+              <img class="card-img-top" style="margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/woven.jpg" alt="Card image cap"><br>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5><br>
-                <a href="#" class="btn btn-dark">Go somewhere</a><br><br>
+                <h5 class="card-title">WOVEN TAPES</h5><br>
+                <!-- <a href="#" class="btn btn-dark">Go somewhere</a><br><br> -->
               </div>
             </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-             <div class="card" style="width: 18rem;"><br>
-              <img class="card-img-top" style="width: 200px;height: 200px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/products/product.png" alt="Card image cap"><br>
+             <div class="card" style="width: 18rem;">
+              <img class="card-img-top" style="height:214px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/draw.jpg" alt="Card image cap"><br>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5><br>
-                <a href="#" class="btn btn-dark">Go somewhere</a><br><br>
+                <h5 class="card-title">DRAW CORDS</h5><br>
+                <!-- <a href="#" class="btn btn-dark">Go somewhere</a><br><br> -->
               </div>
             </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-             <div class="card" style="width: 18rem;"><br>
-              <img class="card-img-top" style="width: 200px;height: 200px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/products/product.png" alt="Card image cap"><br>
+             <div class="card" style="width: 18rem;">
+              <img class="card-img-top" style="margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/knitted.jpg" alt="Card image cap"><br>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5><br>
-                <a href="#" class="btn btn-dark">Go somewhere</a><br><br>
+                <h5 class="card-title">KNITTED TAPES</h5><br>
+                <!-- <a href="#" class="btn btn-dark">Go somewhere</a><br><br> -->
               </div>
             </div>
             </div>
@@ -199,20 +199,20 @@ else{
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Get In Touch With US!</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p class="mb-5">Call or Mail us to get designed and delivered your orders</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>+94382240413</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="mailto:your-email@your-domain.com">cordlank@yahoo.com</a>
             </p>
           </div>
         </div>
