@@ -27,7 +27,7 @@ else{
 	        <img id='img-upload' src="<?php echo base_url() ?>assets/img/products/<?php echo $row->image ?>">
 		</div>
 
-
+ 
         <div class="col-lg-6 mb-4">
         	<div class="form-group">
 			    <label>Product ID -</label>
