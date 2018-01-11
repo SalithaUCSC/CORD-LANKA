@@ -8,7 +8,7 @@ else{
 ?>
 
 
-<div class="container" style="min-height: 800px; margin-top: 100px;">
+<div class="container" style="min-height: 500px; margin-top: 100px;">
 
 	<?php echo validation_errors(); ?>
 	<?php echo form_open_multipart('Dashboard/edit_item/'.$row->product_id); ?>

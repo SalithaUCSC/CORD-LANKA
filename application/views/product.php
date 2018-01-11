@@ -7,7 +7,7 @@ else{
 
 ?>
 <!-- <main role="main" class="container" id="ph-container"> -->
-	<div class="container" style="margin-top: 100px;min-height: 1000px;">
+	<div class="container" style="margin-top: 100px;min-height: 800px;">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="jumbotron" style="height: 500px;">

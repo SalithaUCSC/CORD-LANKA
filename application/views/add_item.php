@@ -8,7 +8,7 @@ else{
 ?>
 
 
-    <div class="container" style="min-height: 700px; margin-top: 100px;">
+    <div class="container" style="min-height: 500px; margin-top: 100px;">
       
       <div class="col-lg-12">
         <div class="row">
