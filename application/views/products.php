@@ -2,7 +2,7 @@
   include 'includes/loggedin_header.php';
 }
 else{
-   include 'includes/header.php';
+   include 'includes/inner_header.php';
 }
 
 ?>
@@ -11,8 +11,8 @@ else{
 		<div class="col-lg-8"><h2 id="card-head">All Products</h2></div><br><br><br>
 		<div class="col-lg-4">
 			 <form method="POST" class="form-inline">
-				<input style="width: 200px;font-family: 'Oswald', sans-serif;margin-right: 10px;" id="searchBox" type="text" placeholder="insert at least 2 characters" name="searchBox" class="form-control" style="margin-right: 60px;">
-				<a name="search_btn" id="search_btn" data-toggle="modal" data-target="#productModal" class="btn btn-primary">search</a>
+				<input style="width: 200px;font-family: 'Oswald', sans-serif;margin-right: 10px;" id="searchBox" type="text" placeholder="insert at least 2 characters" name="searchBox" class="form-control">
+				<a name="search_btn" id="search_btn" data-toggle="modal" data-target="#productModal" class="btn btn-outline-info">search</a>
 			 </form>
 		    <div id="result"></div>
         </div>
@@ -26,7 +26,7 @@ else{
 				    <h5 class="card-title text-center"><?php echo $item->product_name?></h5>
 				    <h6 class="text-center">Rs. <?php echo $item->product_price?></h6>
 				    <p class="card-text text-center"><?php echo $item->description?></p>
-				    <center><a href="<?php echo base_url() ?>Products/product/<?php echo $item->product_id?>" class="btn btn-primary">View Details</a></center>	
+				    <center><a href="<?php echo base_url() ?>Products/product/<?php echo $item->product_id?>" class="btn btn-info btn-sm">View Details</a></center>	
 				  </div>
 				</div>
 			</div>	

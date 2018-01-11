@@ -18,19 +18,19 @@ else{
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>WELCOME to CodeLanka</strong>
+              <strong>WELCOME to CORD LANKA</strong>
             </h1>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">You are at the ideal place for searching traditional items</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Start with us</a>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">Start with us</a>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="bg-primary" id="about" >
+    <section class="bg-dark" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -43,43 +43,48 @@ else{
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" style="margin-top: -80px;">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">OUR PRODUCTS</h2>
             <hr class="my-4">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+             <div class="card" style="width: 18rem;"><br>
+              <img class="card-img-top" style="width: 200px;height: 200px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/products/product.png" alt="Card image cap"><br>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5><br>
+                <a href="#" class="btn btn-dark">Go somewhere</a><br><br>
+              </div>
+            </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+             <div class="card" style="width: 18rem;"><br>
+              <img class="card-img-top" style="width: 200px;height: 200px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/products/product.png" alt="Card image cap"><br>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5><br>
+                <a href="#" class="btn btn-dark">Go somewhere</a><br><br>
+              </div>
+            </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+             <div class="card" style="width: 18rem;"><br>
+              <img class="card-img-top" style="width: 200px;height: 200px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/products/product.png" alt="Card image cap"><br>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5><br>
+                <a href="#" class="btn btn-dark">Go somewhere</a><br><br>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
             </div>
           </div>
         </div>
@@ -186,7 +191,7 @@ else{
     <section class="bg-dark text-white">
       <div class="container text-center">
         <!-- <h2 class="mb-4">Free Download at Start Bootstrap!</h2> -->
-        <a class="btn btn-light btn-xl sr-button" style="margin-top: -110px;" href="<?php echo base_url()?>Products/browse">OUR PRODUCTS</a>
+        <a class="btn btn-light btn-xl sr-button" style="margin-top: -110px;" href="<?php echo base_url()?>Products/browse">SEE MORE</a>
       </div>
     </section>
 
