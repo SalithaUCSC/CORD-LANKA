@@ -2,7 +2,7 @@
   include 'includes/loggedin_header.php';
 }
 else{
-   include 'includes/header.php';
+   include 'includes/inner_header.php';
 }
 
 ?>

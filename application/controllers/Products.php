@@ -78,52 +78,10 @@ class Products extends CI_Controller {
 		$this->load->view('includes/footer');
 	}
 
-	// public function pagination()
-	// {
-	// 	$this->load->library('pagination');
-	// 	$config = array();
-	// 	$config["base_url"] = "#";
-	// 	$config['total_rows'] = $this->Products_model->get_product_count();
-	// 	$config['per_page'] = 3;
-	// 	 $config['uri_segment'] = 3;
-	// 	$config['use_page_numbers'] = TRUE;
-	// 	$config['full_tag_open'] = '<nav aria-label="Page navigation example"><ul class="pagination">';
-	// 	$config['full_tag_close'] = '</ul><nav>';
- //        $config['first_tag_open'] = '<li class="page-item">';
- //        $config['first_tag_close'] = '</li>';
- //            $config['last_tag_open'] = '<li class="page-item">';
- //            $config['last_tag_close'] = '</li>';
- //            $config['next_link'] = '&gt';
- //            $config['next_tag_open'] = '<li class="page-item">';
- //            $config['next_tag_close'] = '</li>';
- //            $config['prev_link'] = '&lt';
- //            $config['pre_tag_open'] = '<li class="page-item">';
- //            $config['prev_tag_close'] = '</li>';
- //        $config['cur_tag_open'] = '<li class="page-item active"><a href="#">';
- //        $config['cur_tag_close'] = '</a></li>';
- //               $config['num_tag_open'] = '<li class="page-item">';
- //            $config['num_tag_close'] = '</li>';
- //            $config['num_links'] = 1;
- //            $this->pagination->initialize($config);
- //            $page = ($this->uri->segment(3));
- //            $start = ($page - 1)*$config["per_page"];
-
- //            $output = array(
- //            	'pagination_link' =>  $this->pagination->create_links(),
- //            	'products_div' => $this->Products_model->products_pagination($config["per_page"], $start)
-
-
- //            );
-
- //            echo jason_encode($output);
-
-
-
-	// }
 	public function product($product_id)
 	{
 		$data['row'] = $this->Products_model->get_a_product($product_id);
-		$this->load->view('includes/header',$data);
+		// $this->load->view('includes/header');
 		$this->load->view('product',$data);
 		$this->load->view('includes/footer');
 	
