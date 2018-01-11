@@ -6,7 +6,7 @@ else{
 }
 
 ?>
-<div class="container" style="margin-top: 100px;min-height: 1000px;">
+<div class="container" style="margin-top: 100px;min-height: 800px;">
 	<div class="row">
 		<div class="col-lg-8"><h2 id="card-head">All Products</h2></div><br><br><br>
 		<div class="col-lg-4">
