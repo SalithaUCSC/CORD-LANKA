@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2018 at 11:25 PM
+-- Generation Time: Jan 11, 2018 at 08:08 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -51,7 +51,11 @@ INSERT INTO `products` (`product_id`, `product_name`, `description`, `product_pr
 (23, 'Product 10', 'description 10', '40000', 'desktop.png'),
 (24, 'Product 11', 'description 11', '10000', 'product.png'),
 (26, 'Product 12', 'description 12', '30000', 'desktop.png'),
-(28, 'Product 13', 'description 13', '50 000', 'laptop.png');
+(28, 'Product 13', 'description 13', '50 000', 'laptop.png'),
+(30, 'Product 15', 'description 15', '40000', 'laptop.png'),
+(32, 'gfsd453', 'dfsafs', '3532x', 'no_image.png'),
+(33, 'gffjg', 'gfh', '875', 'no_image.png'),
+(34, 'ghkg', 'gjf', '65568', 'no_image.png');
 
 -- --------------------------------------------------------
 
@@ -96,7 +100,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 --
 -- AUTO_INCREMENT for table `user`
 --
