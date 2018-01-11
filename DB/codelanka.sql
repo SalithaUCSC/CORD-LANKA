@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2018 at 10:23 AM
+-- Generation Time: Jan 10, 2018 at 11:25 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -39,14 +39,19 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `description`, `product_price`, `image`) VALUES
-(1, 'product 1', 'description 1', '10000', 'no_image.png'),
-(2, 'product 2', 'description 2', '20000', 'no_image.png'),
-(3, 'product 3', 'description 3', '30000', 'no_image.png'),
-(4, 'product 4', 'description 4', '40000', 'no_image.png'),
-(5, 'product 5', 'description 5""', '50000', 'no_image.png'),
-(10, 'Product 6', 'afdda""', 'e123', 'no_image.png'),
-(11, 'Product 7', 'description 7\r\n"', '1000', 'no_image.png'),
-(19, 'sdfsdf', 'dsf', '2543', 'no_image.png');
+(1, 'product 1', 'description 1', '10000', 'product.png'),
+(2, 'product 2', 'description 2', '20000', 'desktop.png'),
+(3, 'product 3', 'description 3', '30000', 'product.png'),
+(4, 'product 4', 'description 4', '40000', 'desktop.png'),
+(5, 'product 5', 'description 5', '50000', 'product.png'),
+(10, 'Product 6', 'description 6', '60000', 'laptop.png'),
+(11, 'Product 7', 'description 7', '70000', 'product.png'),
+(19, 'Product 8', 'description 8', '80000', 'laptop.png'),
+(20, 'Product 9', 'description 9', '10000', 'product.png'),
+(23, 'Product 10', 'description 10', '40000', 'desktop.png'),
+(24, 'Product 11', 'description 11', '10000', 'product.png'),
+(26, 'Product 12', 'description 12', '30000', 'desktop.png'),
+(28, 'Product 13', 'description 13', '50 000', 'laptop.png');
 
 -- --------------------------------------------------------
 
@@ -91,7 +96,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `user`
 --

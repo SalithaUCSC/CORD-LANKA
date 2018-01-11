@@ -20,7 +20,7 @@
     <script src="<?php echo base_url() ?>assets/vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="<?php echo base_url() ?>assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="<?php echo base_url() ?>assets/js/creative.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/creative.js"></script>
 
 
     <script>
