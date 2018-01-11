@@ -9,7 +9,7 @@ else{
 
 <div class="container" style="min-height: 500px; margin-top: 100px;">
 	
-	<a href="<?php echo base_url() ?>Dashboard/add_item "><button class='btn btn-dark' style="float: right;margin-right: 30px;">Add New Item</button></a><br><br>
+	<a href="<?php echo base_url() ?>Image"><button class='btn btn-dark' style="float: right;margin-right: 30px;">Add New Item</button></a><br><br>
 	<!-- <a href="<?php echo base_url() ?>Dashboard/view_items "><button class='btn btn-primary'>View Products</button></a> -->
 
     	<div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 20px; margin-bottom: 100px;">

@@ -25,7 +25,7 @@ else{
 				  <div class="card-body">
 				    <h5 class="card-title text-center"><?php echo $item->product_name?></h5>
 				    <h6 class="text-center">Rs. <?php echo $item->product_price?></h6>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <p class="card-text text-center"><?php echo $item->description?></p>
 				    <center><a href="<?php echo base_url() ?>Products/product/<?php echo $item->product_id?>" class="btn btn-primary">View Details</a></center>	
 				  </div>
 				</div>

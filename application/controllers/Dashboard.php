@@ -20,6 +20,7 @@ class Dashboard extends CI_Controller {
 
 	public function add_item()
 	{
+		
 		$this->load->view('add_item');
 		$this->load->view('includes/footer');
 	}
@@ -47,7 +48,7 @@ class Dashboard extends CI_Controller {
 
 			$this->load->library('upload', $config);
 
-			if(!$this->upload->do_upload()){
+			if($this->upload->do_upload()){
 				$errors = array('error' => $this->upload->display_errors());
 				$image = 'no_image.png';
 				
@@ -87,7 +88,7 @@ class Dashboard extends CI_Controller {
 			if ($this->Dashboard_model->update($product_id)) {
 
 				$this->session->set_flashdata('success','Product is updated');
-				redirect('Dashboard/edit_item/'.$product_id , 'refresh');
+				redirect('Dashboard' , 'refresh');
 
 			} else {
 				$this->session->set_flashdata('error','Product is not updated');
