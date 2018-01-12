@@ -140,7 +140,7 @@ class Products extends CI_Controller {
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
         $this->pagination->initialize($config);
         $data['link'] = $this->pagination->create_links();
-        $data['woven'] = $this->Products_model->draw_cords_pagination($config['per_page'], $page);
+        $data['draw'] = $this->Products_model->draw_cords_pagination($config['per_page'], $page);
 		$this->load->view('draw_cords', $data);
 		$this->load->view('includes/footer');
 	}
@@ -173,7 +173,7 @@ class Products extends CI_Controller {
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
         $this->pagination->initialize($config);
         $data['link'] = $this->pagination->create_links();
-        $data['woven'] = $this->Products_model->knitted_tapes_pagination($config['per_page'], $page);
+        $data['knitted'] = $this->Products_model->knitted_tapes_pagination($config['per_page'], $page);
 		$this->load->view('knitted_tapes', $data);
 		$this->load->view('includes/footer');
 	}
