@@ -18,7 +18,7 @@ else{
 	<div class="row">
 		<?php foreach ($woven as $item) : ?>
 			<div class="col-lg-4">
-				<center><a data-lightbox="roadtrip" href="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>"><img data-lightbox="roadtrip" style="width: 150px;height: 150px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" class="img-thumbnail"></a></center><hr>
+				<center><a data-lightbox="roadtrip" href="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>"><img data-lightbox="roadtrip" style="width: 250px;height: 250px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" class="img-thumbnail"></a></center><hr>
 			</div>	
 		<?php endforeach; ?>	
 
