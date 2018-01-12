@@ -23,7 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url() ?>assets/css/creative.css" rel="stylesheet">
-
+    <link href="<?php echo base_url() ?>assets/css/lightbox.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
