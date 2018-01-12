@@ -54,8 +54,13 @@ else{
               </div>
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Price -</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rs. 5000.00" name="product_price">
+                <label for="exampleInputEmail1">Category -</label>
+                <select class="form-control" name="user_type">
+                  <option value="" selected="selected" disabled="disabled">Select Product Category</option>
+                  <option value="manager">Woven Tapes</option>
+                  <option value="site officer">Draw Cords</option>
+                  <option value="accountant">Knitted Tapes</option>
+                </select>
               </div>
               
               <div class="form-group">
