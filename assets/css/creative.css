@@ -298,7 +298,7 @@ header.masthead {
 #services .card:hover {
   box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.4);
 }
-footer, #mainNav, nav .container .navbar-brand, #company-greeting, #card-head, #result, .pro-result-head {
+footer, #mainNav, nav .container .navbar-brand, #company-greeting, #card-head, #result, .pro-result-head, #page-top {
     font-family: 'Oswald', sans-serif !important;   
 }
 
