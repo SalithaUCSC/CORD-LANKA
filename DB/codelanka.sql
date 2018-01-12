@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2018 at 08:13 AM
+-- Generation Time: Jan 12, 2018 at 12:29 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `products` (
   `product_id` int(11) NOT NULL,
+  `category_id` int(5) NOT NULL,
+  `category_name` varchar(30) NOT NULL,
   `product_name` varchar(50) NOT NULL,
-  `description` varchar(1000) NOT NULL,
-  `product_price` varchar(20) NOT NULL,
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -38,21 +38,40 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`product_id`, `product_name`, `description`, `product_price`, `image`) VALUES
-(1, 'product 1', 'description 1', '10000', 'product.png'),
-(2, 'product 2', 'description 2', '20000', 'desktop.png'),
-(3, 'product 3', 'description 3', '30000', 'product.png'),
-(4, 'product 4', 'description 4', '40000', 'desktop.png'),
-(5, 'product 5', 'description 5', '50000', 'product.png'),
-(10, 'Product 6', 'description 6', '60000', 'laptop.png'),
-(11, 'Product 7', 'description 7', '70000', 'product.png'),
-(19, 'Product 8', 'description 8', '80000', 'laptop.png'),
-(20, 'Product 9', 'description 9', '10000', 'product.png'),
-(23, 'Product 10', 'description 10', '40000', 'desktop.png'),
-(24, 'Product 11', 'description 11', '10000', 'product.png'),
-(26, 'Product 12', 'description 12', '30000', 'desktop.png'),
-(28, 'Product 13', 'description 13', '50 000', 'laptop.png'),
-(30, 'Product 15', 'description 15', '40000', 'laptop.png');
+INSERT INTO `products` (`product_id`, `category_id`, `category_name`, `product_name`, `image`) VALUES
+(1, 1, 'woven tapes', 'product 1', 'product.png'),
+(2, 2, 'draw cords', 'product 2', 'desktop.png'),
+(3, 3, 'knitted tapes', 'product 3', 'product.png'),
+(4, 1, 'woven tapes', 'product 4', 'desktop.png'),
+(5, 2, 'draw cords', 'product 5', 'product.png'),
+(10, 3, 'knitted tapes', 'Product 6', 'laptop.png'),
+(11, 1, 'woven tapes', 'Product 7', 'product.png'),
+(19, 2, 'draw cords', 'Product 8', 'laptop.png'),
+(20, 3, 'knitted tapes', 'Product 9', 'product.png'),
+(23, 1, 'woven tapes', 'Product 10', 'desktop.png'),
+(24, 2, 'draw cords', 'Product 11', 'product.png'),
+(26, 3, 'knitted tapes', 'Product 12', 'desktop.png'),
+(28, 1, 'woven tapes', 'Product 13', 'laptop.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_categories`
+--
+
+CREATE TABLE `product_categories` (
+  `category_id` int(2) NOT NULL,
+  `category_name` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product_categories`
+--
+
+INSERT INTO `product_categories` (`category_id`, `category_name`) VALUES
+(1, 'woven tapes'),
+(2, 'draw cords'),
+(3, 'knitted tapes');
 
 -- --------------------------------------------------------
 
@@ -84,6 +103,12 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`product_id`);
 
 --
+-- Indexes for table `product_categories`
+--
+ALTER TABLE `product_categories`
+  ADD PRIMARY KEY (`category_id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -97,7 +122,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+--
+-- AUTO_INCREMENT for table `product_categories`
+--
+ALTER TABLE `product_categories`
+  MODIFY `category_id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `user`
 --
