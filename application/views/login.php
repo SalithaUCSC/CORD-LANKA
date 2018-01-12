@@ -13,7 +13,7 @@ else{
 <div class="card" style="width: 38rem; padding-top: 30px; padding-bottom: 30px; background-color: whitesmoke;">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
   <div class="card-body">
-    <h2 class="card-title">Login</h2>
+    <h2 class="card-title"><i class="fa fa-user fa-2x" aria-hidden="true"></i> Login</h2>
     <br>
 
     <?php if ($this->session->flashdata('errmsg')) {
