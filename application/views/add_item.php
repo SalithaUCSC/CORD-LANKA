@@ -6,13 +6,7 @@ else{
    redirect('Login');
 }
 ?>
-
-
-<<<<<<< HEAD
-    <div class="container" style="min-height: 800px; margin-top: 100px;">
-=======
     <div class="container" style="min-height: 500px; margin-top: 100px;">
->>>>>>> b7f76d8d475353cad06e474dd955b67d1ae8fa1e
       
       <div class="col-lg-12">
         <div class="row">
