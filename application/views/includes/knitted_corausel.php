@@ -7,7 +7,7 @@
 	  </ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="<?php echo base_url();?>assets/img/portfolio/fullsize/1.jpg" style="height: 600px;" alt="First slide">
+	      <img class="d-block w-100" src="<?php echo base_url();?>assets/img/Machine/6.jpg" style="height: 600px;" alt="First slide">
 	        <div class="carousel-caption d-none d-md-block text-left">
 			    <p id="captionH" class="animated slideInLeft">Knitted Products</p>
 			    <p id="captionSm" class="animated slideInLeft">with the best quality</p><br>
@@ -15,7 +15,7 @@
 		  	</div>
 	    </div>
 	    <div class="carousel-item">
-	      <img class="d-block w-100" src="<?php echo base_url();?>assets/img/portfolio/fullsize/2.jpg" style="height: 600px;" alt="Second slide">
+	      <img class="d-block w-100" src="<?php echo base_url();?>assets/img/Machine/7.jpg" style="height: 600px;" alt="Second slide">
 	        <div class="carousel-caption d-none d-md-block text-left">
 			    <p id="captionH" class="animated slideInRight">Powerful Machines</p>
 			    <p id="captionSm" class="animated slideInRight">working all days</p><br>
@@ -23,7 +23,7 @@
 		  	</div>	      
 	    </div>
 	    <div class="carousel-item">
-	      <img class="d-block w-100" src="<?php echo base_url();?>assets/img/portfolio/fullsize/3.jpg" style="height: 600px;" alt="Third slide">
+	      <img class="d-block w-100" src="<?php echo base_url();?>assets/img/Machine/8.jpg" style="height: 600px;" alt="Third slide">
 	        <div class="carousel-caption d-none d-md-block">
 			    <p id="captionH" class="animated fadeInDownBig">Customized Items</p>
 			    <p id="captionSm" class="animated slideInDown">with your favourite designs</p><br>
