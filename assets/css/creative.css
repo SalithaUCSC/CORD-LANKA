@@ -309,3 +309,12 @@ footer, #mainNav, nav .container .navbar-brand, #company-greeting, #card-head, #
 .navbar-brand {
   font-size: 30px !important;  
 }
+
+.carousel-item #captionH {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+}
+.carousel-item #captionSm {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}

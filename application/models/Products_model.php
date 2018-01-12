@@ -35,7 +35,7 @@ class Products_model extends CI_Model {
 
 	public function get_woven_count()
 	{        
-        $this->db->where('category_name', 'woven_tapes');
+        $this->db->where('category_name', 'woven tapes');
         $query = $this->db->get('products');
         return $query->num_rows();
 	}
@@ -45,11 +45,48 @@ class Products_model extends CI_Model {
         $this->db->select('*');
         $this->db->from('products');
         $this->db->order_by('product_id','DESC');
-        $this->db->where('category_name', 'woven_tapes');
+        $this->db->where('category_name', 'woven tapes');
         $this->db->limit($limit, $start);
         $query = $this->db->get();
         return $result = $query->result();	
     }
+
+	public function get_draw_count()
+	{        
+        $this->db->where('category_name', 'draw cords');
+        $query = $this->db->get('products');
+        return $query->num_rows();
+	}
+
+	public function draw_cords_pagination($limit, $start)
+	{
+        $this->db->select('*');
+        $this->db->from('products');
+        $this->db->order_by('product_id','DESC');
+        $this->db->where('category_name', 'draw cords');
+        $this->db->limit($limit, $start);
+        $query = $this->db->get();
+        return $result = $query->result();	
+    }
+
+	public function get_knitted_count()
+	{        
+        $this->db->where('category_name', 'knitten tapes');
+        $query = $this->db->get('products');
+        return $query->num_rows();
+	}
+
+	public function knitted_tapes_pagination($limit, $start)
+	{
+        $this->db->select('*');
+        $this->db->from('products');
+        $this->db->order_by('product_id','DESC');
+        $this->db->where('category_name', 'knitten tapes');
+        $this->db->limit($limit, $start);
+        $query = $this->db->get();
+        return $result = $query->result();	
+    }
+
 
 	public function search_product($keyword)
 	{
