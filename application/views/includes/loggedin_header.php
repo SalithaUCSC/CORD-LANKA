@@ -26,6 +26,7 @@
 
     <!-- dataTabales CSS -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dataTables.bootstrap4.min.css">
+    <link href="<?php echo base_url() ?>assets/css/lightbox.css" rel="stylesheet">
 
     <script language="JavaScript" type="text/javascript">
         function checkDelete(){
