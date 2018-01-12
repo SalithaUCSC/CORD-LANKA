@@ -114,6 +114,7 @@ class Products extends CI_Controller {
 
 	public function draw_cords()
 	{
+		$this->load->view('includes/draw_corausel');
         $this->load->library('pagination');
         // $this->load->view('includes/inner_header');
         $config['base_url'] = 'http://localhost/Projects/CodeLanka/Products/draw_cords';
@@ -147,6 +148,7 @@ class Products extends CI_Controller {
 
 	public function knitted_tapes()
 	{
+		$this->load->view('includes/knitted_corausel');
         $this->load->library('pagination');
         // $this->load->view('includes/inner_header');
         $config['base_url'] = 'http://localhost/Projects/CodeLanka/Products/knitted_tapes';

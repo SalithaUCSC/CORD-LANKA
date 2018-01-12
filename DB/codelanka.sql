@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 12, 2018 at 12:29 PM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 7.0.13
+-- Host: 127.0.0.1:3312
+-- Generation Time: Jan 12, 2018 at 12:56 PM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 7.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -41,17 +41,17 @@ CREATE TABLE `products` (
 INSERT INTO `products` (`product_id`, `category_id`, `category_name`, `product_name`, `image`) VALUES
 (1, 1, 'woven tapes', 'product 1', 'product.png'),
 (2, 2, 'draw cords', 'product 2', 'desktop.png'),
-(3, 3, 'knitted tapes', 'product 3', 'product.png'),
-(4, 1, 'woven tapes', 'product 4', 'desktop.png'),
-(5, 2, 'draw cords', 'product 5', 'product.png'),
+(3, 3, 'knitted tapes', 'product 3', 'laptop.png'),
+(4, 1, 'woven tapes', 'product 4', 'product.png'),
+(5, 2, 'draw cords', 'product 5', 'desktop.png'),
 (10, 3, 'knitted tapes', 'Product 6', 'laptop.png'),
 (11, 1, 'woven tapes', 'Product 7', 'product.png'),
-(19, 2, 'draw cords', 'Product 8', 'laptop.png'),
-(20, 3, 'knitted tapes', 'Product 9', 'product.png'),
-(23, 1, 'woven tapes', 'Product 10', 'desktop.png'),
-(24, 2, 'draw cords', 'Product 11', 'product.png'),
-(26, 3, 'knitted tapes', 'Product 12', 'desktop.png'),
-(28, 1, 'woven tapes', 'Product 13', 'laptop.png');
+(19, 2, 'draw cords', 'Product 8', 'desktop.png'),
+(20, 3, 'knitted tapes', 'Product 9', 'laptop.png'),
+(23, 1, 'woven tapes', 'Product 10', 'product.png'),
+(24, 2, 'draw cords', 'Product 11', 'desktop.png'),
+(26, 3, 'knitted tapes', 'Product 12', 'laptop.png'),
+(28, 1, 'woven tapes', 'Product 13', 'product.png');
 
 -- --------------------------------------------------------
 

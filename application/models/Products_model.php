@@ -71,7 +71,7 @@ class Products_model extends CI_Model {
 
 	public function get_knitted_count()
 	{        
-        $this->db->where('category_name', 'knitten tapes');
+        $this->db->where('category_name', 'knitted tapes');
         $query = $this->db->get('products');
         return $query->num_rows();
 	}
@@ -81,7 +81,7 @@ class Products_model extends CI_Model {
         $this->db->select('*');
         $this->db->from('products');
         $this->db->order_by('product_id','DESC');
-        $this->db->where('category_name', 'knitten tapes');
+        $this->db->where('category_name', 'knitted tapes');
         $this->db->limit($limit, $start);
         $query = $this->db->get();
         return $result = $query->result();	

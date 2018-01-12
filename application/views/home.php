@@ -70,7 +70,7 @@ else{
              <div class="card" style="width: 18rem;">
               <img class="card-img-top" style="height:214px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/draw.jpg" alt="Card image cap"><br>
               <div class="card-body">
-                <a href="<?php echo site_url("Products/draw_codes") ?>"><h5 class="card-title">DRAW CORDS</h5></a><br>
+                <a href="<?php echo site_url("Products/draw_cords") ?>"><h5 class="card-title">DRAW CORDS</h5></a><br>
                 <!-- <a href="#" class="btn btn-dark">Go somewhere</a><br><br> -->
               </div>
             </div>
