@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Image extends CI_Controller {
+class Add_Item extends CI_Controller {
 
 	public function __construct()
 	{
@@ -11,7 +11,7 @@ class Image extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('image_upload');
+		$this->load->view('add_item');
 	}
 
 	public function add_new_item()
@@ -21,7 +21,7 @@ class Image extends CI_Controller {
 
 		if ($this->form_validation->run() == FALSE){
 
-			$this->load->view('image_upload');
+			$this->load->view('add_item');
        	}
 
 		else {
@@ -48,7 +48,7 @@ class Image extends CI_Controller {
 			$this->load->model('Image_model');
 	        $this->Image_model->add_item($image);
 	        $this->session->set_flashdata('success','product is added');
-			redirect('Image');
+			redirect('Add_Item');
 		}
 	}
 }

@@ -26,7 +26,7 @@ else{
 					<center><div class="text"><h2 id="card-head">PRODUCTS LIST</h2></div></center>
 				</div>
 				<div class="col-lg-6">
-					<a href="<?php echo base_url() ?>Image"><button class='btn btn-dark' style="float: right;margin-right: 30px;">Add New Item</button></a>
+					<a href="<?php echo base_url() ?>Add_Item"><button class='btn btn-dark' style="float: right;margin-right: 30px;">Add New Item</button></a>
 				</div>
 			</div>
 			<br>
