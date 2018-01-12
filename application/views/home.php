@@ -102,9 +102,6 @@ else{
                   <div class="project-category text-faded">
                     Category
                   </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
                 </div>
               </div>
             </a>
@@ -116,9 +113,6 @@ else{
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
                     Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
                   </div>
                 </div>
               </div>
@@ -132,9 +126,6 @@ else{
                   <div class="project-category text-faded">
                     Category
                   </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
                 </div>
               </div>
             </a>
@@ -146,9 +137,6 @@ else{
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
                     Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
                   </div>
                 </div>
               </div>
@@ -162,9 +150,6 @@ else{
                   <div class="project-category text-faded">
                     Category
                   </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
                 </div>
               </div>
             </a>
@@ -176,9 +161,6 @@ else{
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
                     Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
                   </div>
                 </div>
               </div>
