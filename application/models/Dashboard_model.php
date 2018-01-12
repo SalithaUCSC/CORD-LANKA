@@ -46,7 +46,7 @@ class Dashboard_model extends CI_Model {
 
             $this->load->library('upload', $config);
 
-            if($this->upload->do_upload()){
+            if(!$this->upload->do_upload()){
                 $errors = array('error' => $this->upload->display_errors());
                 $image = 'no_image.png';
                 
@@ -57,11 +57,9 @@ class Dashboard_model extends CI_Model {
             }
 
         $data = array(
-        'product_id' => $this->input->post('product_id'),
         'product_name' => $this->input->post('product_name'),
-        'description' => $this->input->post('description'),
-        'product_price' => $this->input->post('product_price'),
-        'image' => $this->input->post('image')
+        'category_name' => $this->input->post('category_name'),
+        'image' => $image
         );
         $this->db->where('product_id',$product_id);
         $this->db->update('products',$data);

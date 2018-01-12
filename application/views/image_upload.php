@@ -50,14 +50,19 @@ else{
               </div>
 
               <div class="form-group">
-                <label for="exampleInputEmail1">Price -</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Rs. 5000.00" name="product_price">
+                <label for="exampleInputEmail1">Category -</label>
+                <select class="form-control" name="category_name">
+                  <option value="" selected="selected" disabled="disabled">Select Product Category</option>
+                  <option value="woven tapes">Woven Tapes</option>
+                  <option value="draw cords">Draw Cords</option>
+                  <option value="knitted tapes">Knitted Tapes</option>
+                </select>
               </div>
               
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="exampleInputEmail1">Description -</label>
                 <textarea type="text" name="description" class="form-control reserve-form empty iconified" id="description" rows="7" cols="48" placeholder=" Enter text here..."></textarea>
-              </div>
+              </div> -->
               <br>
               <center><button type="submit" class="btn btn-success">ADD Product</button></center>
                <?php echo form_close(); ?>

@@ -1,12 +1,11 @@
-
 <?php if ($this->session->userdata('loggedin')) {
   include 'includes/loggedin_header.php';
 }
 else{
    redirect('Login');
 }
-?>
 
+?>
 
 <div class="container" style="min-height: 500px; margin-top: 100px;">
 
@@ -39,14 +38,14 @@ else{
 			  </div>
 
 			  <div class="form-group">
-			    <label>Price -</label>
-			    <input type="text" class="form-control" name="product_price" value="<?php echo $row->product_price ?>">
-			  </div>
-			  
-			  <div class="form-group">
-			    <label>Description -</label>
-			    <textarea type="text" name="description" class="form-control reserve-form empty iconified" id="description" rows="7" cols="48"><?php echo $row->description ?></textarea>
-			  </div>
+			      <label for="exampleInputEmail1">Category</label>
+			      <select id="" class="form-control" name="category_name" value="<?php echo $row->category_name ?>">
+			      	<option value="" disabled="disabled">Select User Type</option>
+			        <option <?=$row->category_name =="woven tapes" ? "selected" : ""?> value="woven tapes">Woven Tapes</option>
+			        <option <?=$row->category_name =="draw cords" ? "selected" : ""?> value="draw cords">Draw Cords</option>
+			        <option <?=$row->category_name =="knitted tapes" ? "selected" : ""?> value="knitted tapes">Knitted Tapes</option>
+			      </select>
+			    </div>
 			  <br>
 			  <center>
 			  	<button type="submit" name="update" class="btn btn-success">UPDATE Product</button><br><br>

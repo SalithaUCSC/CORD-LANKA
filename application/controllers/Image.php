@@ -17,9 +17,7 @@ class Image extends CI_Controller {
 	public function add_new_item()
 	{
 		$this->form_validation->set_rules('product_name', 'Product Name', 'required');
-		$this->form_validation->set_rules('product_price', 'Product Price', 'required');
-		$this->form_validation->set_rules('description', 'Description', 'required');
-
+		$this->form_validation->set_rules('category_name', 'Product Category', 'required');
 
 		if ($this->form_validation->run() == FALSE){
 
