@@ -62,7 +62,7 @@
 
             $(document).on('click', '#search_btn', function(){  
                 var pro_res = $('#searchBox').val();
-                // console.log(com);
+                console.log(pro_res);
              $.ajax({
                 url : "<?php echo base_url() ?>products/get_product_result",
                 method : "POST",

@@ -24,12 +24,12 @@ class Products extends CI_Controller {
 		$resultset = $this->Products_model->search_product($keyword);
 		
 		if($resultset->num_rows()<=0) {
-			$arr_res.='<li style="width:200px;" class="list-group-item text-center"> No records </li>';
+			$arr_res.='<li style="width:250px;" class="list-group-item text-center"> No records </li>';
 		}
 		else {
 			foreach($resultset->result_array() as $row)
         	{
-	          $arr_res .= '<li style="width:200px; position: absolute;
+	          $arr_res .= '<li style="width:250px; position: absolute;
 						  text-indent: 2px;
 						  cursor: pointer;
 						  z-index: 1000;
@@ -38,7 +38,7 @@ class Products extends CI_Controller {
 						  border-radius: 4px;
 						  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 						  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-						  background-clip: padding-box;" class="list-group-item">'.$row["product_name"].'</li>';
+						  background-clip: padding-box;" class="list-group-item">'.$row["category_name"].'</li>';
         	}
         	
 		}			
@@ -48,7 +48,7 @@ class Products extends CI_Controller {
 	public function browse()
 	{
         $this->load->library('pagination');
-        $this->load->view('includes/inner_header');
+        // $this->load->view('includes/inner_header');
         $config['base_url'] = 'http://localhost/Projects/CodeLanka/Products/browse';
         $config['total_rows'] = $this->Products_model->get_product_count();
         $config['per_page'] = 6;
@@ -94,26 +94,23 @@ class Products extends CI_Controller {
 
             if(isset($pro_res) and !empty($pro_res)){
                 $records = $this->Products_model->get_search_product($pro_res);
-                $output = '';
+                $output = '<center><div class="row">';
                 foreach($records->result_array() as $row){
                 	$output .= '<br>	
-                		<center><div style="width:60%;height:80%;"><img style="width:50%;height:70%;" src="'.base_url().'assets/img/products/'.$row['image'].'"></div></center><br>
-						 
-						    <h5 class="text-center"">'.$row["product_name"].'</h5></a><br>
-						    <a class="text-center" href="'.base_url().'products/product/'.$row['product_id'].'""><h6>See More Details</h6></a><br>
-						    	<div class="text-left">
-						    	<ul class="list-group">
-							    	<li class="list-group-item"><b>Product Price</b> : '.$row["product_price"].'</li>
-							    	<li class="list-group-item"><b>Product Description</b> : '.$row['description'].'</li>'
-							    	
-							    	;
+                		<div class="col-md-4"><img class="img-thumbnail" style="width:80%;height:100%;" src="'.base_url().'assets/img/products/'.$row['image'].'"></div>';
                 }
-                $output .= '</ul></div>';
+                $output .= '</div><br></center>';
                 echo $output;
             }
             else {
-            	echo '<center><ul style="width: 200px;" class="list-group"><li class="list-group-item">'.'Select a product'.'</li></ul></center>';
+            	echo '<center><ul style="width: 250px;" class="list-group"><li class="list-group-item">'.'Select a product'.'</li></ul></center>';
             }
  
+	}
+
+	public function woven_tapes()
+	{
+		$this->load->view('woven_tapes');
+		$this->load->view('includes/footer');
 	}
 }

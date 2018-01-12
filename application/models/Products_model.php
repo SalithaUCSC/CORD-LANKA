@@ -69,15 +69,15 @@ class Products_model extends CI_Model {
 	public function search_product($keyword)
 	{
 		$this->db->select('*');
-		$this->db->like('product_name', $keyword, 'after');
-		$res = $this->db->get('products');
+		$this->db->like('category_name', $keyword, 'after');
+		$res = $this->db->get('product_categories');
 		return $res;		
 	}
 
 	public function get_search_product($pro_res)
 	{
 		$this->db->select('*');
-		$this->db->where('product_name',$pro_res);
+		$this->db->where('category_name',$pro_res);
 		$res2 = $this->db->get('products');
 		return $res2;
 	}

@@ -33,13 +33,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Oswald', sans-serif !important; }
 
 .bg-primary {
-  background-color: #F05F40 !important; } 
+  background-color: #F05F40 !important; 
+  font-family: 'Oswald', sans-serif !important;} 
 
 .bg-dark {
-  background-color: #212529 !important; }
+  background-color: #212529 !important; 
+  font-family: 'Oswald', sans-serif !important;}
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
@@ -284,10 +286,6 @@ header.masthead {
   font-family: 'Oswald', sans-serif;  
 }
 
-#company-greeting {
-  font-family: 'Oswald', sans-serif;    
-}
-
 #slogan p{
     font-size: 24px; 
     font-family: 'Oswald', sans-serif; 
@@ -300,6 +298,14 @@ header.masthead {
 #services .card:hover {
   box-shadow: 4px 8px 8px 4px rgba(0,0,0,0.4);
 }
-footer {
-    font-family: 'Oswald', sans-serif;   
+footer, #mainNav, nav .container .navbar-brand, #company-greeting, #card-head, #result, .pro-result-head {
+    font-family: 'Oswald', sans-serif !important;   
+}
+
+.navbar-collapse ul li a {
+  font-size: 20px !important;
+}
+
+.navbar-brand {
+  font-size: 30px !important;  
 }

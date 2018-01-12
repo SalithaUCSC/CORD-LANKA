@@ -12,7 +12,7 @@ class Dashboard extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('includes/loggedin_header');
+		// $this->load->view('includes/loggedin_header');
 		$data['allitems'] = $this->Dashboard_model->get_all_products();
 		$this->load->view('dashboard', $data);
 		$this->load->view('includes/footer');		
