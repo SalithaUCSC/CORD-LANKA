@@ -40,11 +40,11 @@ else{
 								<tr class="info">
 
 										
-									<th>Product</th>
-									<th>Product Name</th>
-									<th>Category Name</th>
-									<th>Edit</th>
-									<th>Remove</th>
+									<th class="text-center">Product</th>
+									<th class="text-center">Product Name</th>
+									<th class="text-center">Category Name</th>
+									<th class="text-center">Edit</th>
+									<th class="text-center">Remove</th>
 																								
 								</tr>
 							</thead>
@@ -52,11 +52,11 @@ else{
 								<?php foreach ($allitems as $row) : ?>
 								<tr>
 									
-									<td><img style="width:50px; height: 60px;" src="<?php echo base_url();?>assets/img/products/<?php echo $row->image; ?>"></td>								
-									<td><?php echo $row->product_name ?></td>
-									<td><?php echo $row->category_name ?></td>
-									<td><a class="btn btn-warning btn-sm" href="<?php echo base_url();?>Dashboard/edit_item/<?php echo $row->product_id ?>" name="update">Update</a></td>
-									<td><a href="<?php echo base_url();?>Dashboard/remove_item/<?php echo $row->product_id ?>"><button type="button" class="btn btn-danger btn-sm btn-confirm" onclick="return checkDelete()">Delete</button></a></td>
+									<td class="text-center"><img style="width:50px; height: 60px;" src="<?php echo base_url();?>assets/img/products/<?php echo $row->image; ?>"></td>								
+									<td class="text-center"><?php echo $row->product_name ?></td>
+									<td class="text-center"><?php echo $row->category_name ?></td>
+									<td class="text-center"><a class="btn btn-warning btn-sm" href="<?php echo base_url();?>Dashboard/edit_item/<?php echo $row->product_id ?>" name="update">Update</a></td>
+									<td class="text-center"><a href="<?php echo base_url();?>Dashboard/remove_item/<?php echo $row->product_id ?>"><button type="button" class="btn btn-danger btn-sm btn-confirm" onclick="return checkDelete()">Delete</button></a></td>
 								</tr>
 								<?php endforeach; ?>
 							</tbody>
