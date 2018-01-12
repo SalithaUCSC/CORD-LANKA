@@ -59,7 +59,7 @@ else{
              <div class="card" style="width: 18rem;">
               <img class="card-img-top" style="margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/woven.jpg" alt="Card image cap"><br>
               <div class="card-body">
-                <h5 class="card-title">WOVEN TAPES</h5><br>
+                <a href="<?php echo site_url("Products/woven_tapes") ?>"><h5 class="card-title">WOVEN TAPES</h5></a><br>
                 <!-- <a href="#" class="btn btn-dark">Go somewhere</a><br><br> -->
               </div>
             </div>
