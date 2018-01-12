@@ -61,6 +61,7 @@ class Dashboard_model extends CI_Model {
         'category_name' => $this->input->post('category_name'),
         'image' => $image
         );
+        
         $this->db->where('product_id',$product_id);
         $this->db->update('products',$data);
         return $product_id;		
