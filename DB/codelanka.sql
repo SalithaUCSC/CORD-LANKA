@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3312
--- Generation Time: Jan 12, 2018 at 02:54 PM
+-- Generation Time: Jan 12, 2018 at 04:10 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -38,10 +38,10 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `category_name`, `product_name`, `image`) VALUES
-(1, 'woven tapes', 'Product 1', 'product.png'),
+(1, 'woven tapes', 'Product 1', 'Product 1.jpg'),
 (2, 'draw cords', 'Product 2', 'desktop.png'),
 (3, 'knitted tapes', 'Product 3', 'laptop.png'),
-(4, 'woven tapes', 'Product 4', 'product.png'),
+(4, 'woven tapes', 'Product 4', 'Product 4.jpg'),
 (5, 'draw cords', 'Product 5', 'desktop.png'),
 (10, 'knitted tapes', 'Product 6', 'laptop.png'),
 (11, 'woven tapes', 'Product 7', 'product.png'),
@@ -52,7 +52,8 @@ INSERT INTO `products` (`product_id`, `category_name`, `product_name`, `image`) 
 (26, 'knitted tapes', 'Product 12', 'laptop.png'),
 (28, 'woven tapes', 'Product 13', 'product.png'),
 (32, 'draw cords', 'Product 14', 'desktop.png'),
-(33, 'knitted tapes', 'Product 15', 'laptop.png');
+(33, 'knitted tapes', 'Product 15', 'laptop.png'),
+(34, 'woven tapes', 'Product 16', 'product.png');
 
 -- --------------------------------------------------------
 
@@ -97,7 +98,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `user`
 --
