@@ -58,11 +58,6 @@ else{
                   <option value="knitted tapes">Knitted Tapes</option>
                 </select>
               </div>
-              
-              <!-- <div class="form-group">
-                <label for="exampleInputEmail1">Description -</label>
-                <textarea type="text" name="description" class="form-control reserve-form empty iconified" id="description" rows="7" cols="48" placeholder=" Enter text here..."></textarea>
-              </div> -->
               <br>
               <center><button type="submit" class="btn btn-success">ADD Product</button></center><br>
               <center><a href="<?php echo base_url() ?>Dashboard" classs="btn btn-dark">Back to home</a></center>

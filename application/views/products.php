@@ -22,12 +22,9 @@ else{
 		<?php foreach ($product_items as $item) : ?>
 			<div class="col-lg-4">
 				<div class="card" style="width: 22rem; margin-bottom: 20px;"><br>
-				  <center><img class="card-img-top" style="width: 120px;height: 150px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" alt="Card image cap"></center>	
+				  <center><a data-lightbox="roadtrip" href="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>"><span class="roll" ></span><img id="card-img-top"  class="img-zoom" style="width: 120px;height: 150px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" alt="Card image cap"></a></center>	
 				  <div class="card-body"><hr>
-				    <!-- <h5 class="card-title text-center"><?php echo $item->product_name?></h5> -->
 				    <h5 class="text-center"><?php echo $item->category_name?></h5>
-				    <!-- <p class="card-text text-center"><?php echo $item->description?></p> -->
-				    <!-- <center><a href="<?php echo base_url() ?>Products/product/<?php echo $item->product_id?>" class="btn btn-info btn-sm">View Details</a></center>	 -->
 				  </div>
 				</div>
 			</div>	

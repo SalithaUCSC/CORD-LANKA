@@ -18,7 +18,7 @@ else{
 	<div class="row">
 		<?php foreach ($draw as $item) : ?>
 			<div class="col-lg-4">
-				<center><a data-lightbox="roadtrip" data-lightbox="roadtrip" href="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>"><img style="width: 250px;height: 250px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" class="img-thumbnail"></a></center><hr>
+				<center><a data-lightbox="roadtrip" href="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>"><span class="roll-2" ></span><img style="width: 250px;height: 250px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" class="img-thumbnail"></a></center><hr>
 			</div>	
 		<?php endforeach; ?>	
 

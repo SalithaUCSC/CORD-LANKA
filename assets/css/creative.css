@@ -318,3 +318,60 @@ footer, #mainNav, nav .container .navbar-brand, #company-greeting, #card-head, #
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
 }
+
+#img-zoom:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+span.roll {
+  background:center center no-repeat #fff;
+  height: 167px;
+  position: absolute;
+  text-align: center;
+  line-height: 153px;
+  width: 223px;
+  z-index: 10;  
+}
+ 
+/* add the font awesome icon */
+ 
+.roll:before {
+    content: "\f00e"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #784669;
+    font-size: 40px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+}
+
+span.roll-2 {
+  background:center center no-repeat #fff;
+  height: 300px;
+  position: absolute;
+  text-align: center;
+  line-height: 153px;
+  width: 300px;
+  z-index: 10;  
+}
+ 
+/* add the font awesome icon */
+ 
+.roll-2:before {
+    content: "\f00e"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #784669;
+    font-size: 40px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 50px;
+    left: 110px;
+}

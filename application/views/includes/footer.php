@@ -1,7 +1,7 @@
 
     <footer class="py-5" style="background-color: black;">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; CODE LANKA (PVT) LTD 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; CORD LANKA (PVT) LTD 2018</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -22,17 +22,66 @@
     <!-- Custom scripts for this template -->
     <script src="<?php echo base_url() ?>assets/js/creative.js"></script>
     <script src="<?php echo base_url() ?>assets/js/lightbox-plus-jquery.min.js"></script>
-
+    
     <script>
       $(document).ready(function(){
 
-            $('#pro_table').DataTable({
-                "searching" : true
-            });
+            // $('#pro_table').DataTable({
+            //     "searching" : true
+            // });
 
             function checkDelete(){
                 return confirm('Are you sure?');
             }       
+
+            $(function() {
+            // OPACITY OF BUTTON SET TO 0%
+            $(".roll").css("opacity","0");
+             
+            // ON MOUSE OVER
+            $(".roll").hover(function () {
+             
+            // SET OPACITY TO 70%
+            $(this).stop().animate({
+            opacity: .7
+            }, "fast");
+            },
+                          
+             
+            // ON MOUSE OUT
+            function () {
+             
+            // SET OPACITY BACK TO 50%
+            $(this).stop().animate({
+            opacity: 0
+            }, "slow");
+            });
+            });
+
+
+            $(function() {
+            // OPACITY OF BUTTON SET TO 0%
+            $(".roll-2").css("opacity","0");
+             
+            // ON MOUSE OVER
+            $(".roll-2").hover(function () {
+             
+            // SET OPACITY TO 70%
+            $(this).stop().animate({
+            opacity: .7
+            }, "fast");
+            },
+                          
+             
+            // ON MOUSE OUT
+            function () {
+             
+            // SET OPACITY BACK TO 50%
+            $(this).stop().animate({
+            opacity: 0
+            }, "slow");
+            });
+            });
 
             $('#searchBox').keyup(function(){   
                 var keyword = $('#searchBox').val(); 
@@ -42,7 +91,8 @@
                         url: "<?php echo base_url() ?>products/check_product",  
                         method: "POST",
                         data: { keyword: keyword },                       
-                        success:function(data){                            
+                        success:function(data){      
+                            console.log(keyword);                      
                             $('#result').html(data);                              
                         },
                         dataType: "text"                
@@ -109,35 +159,7 @@
 
           $("#imgInp").change(function(){
               readURL(this);
-          }); 
-
-
-
-        // $('#userRow').on('click','.btn-confirm', function(){
-        //   var id = $(this).attr('dataid');
-        //   $('#del_modal').data('id',id).modal('show');
-        // });
-
-        // $('#btn-delete').on('click', function(){
-        //   var id = $('#del_modal').data('id');
-        //   $.ajax({
-        //     url: "<?php echo base_url()?>Dashboard/remove_item",
-        //     method: "POST",
-        //     data:{id:id},
-        //     dataType: 'json',
-        //     success: function(data){
-        //       alert('deleted');
-        //       //remove the row
-        //       $('#rowId-'+id).remove();
-        //       //hide the modal
-        //       $('#del_modal').modal('hide');        
-        //     },
-        //     error: function() {
-        //       alert('error');
-        //       $('#del_modal').modal('hide');  
-        //     }
-        //   });
-        // });         
+          });        
 
         });
 

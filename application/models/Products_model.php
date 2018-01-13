@@ -92,7 +92,7 @@ class Products_model extends CI_Model {
 	{
 		$this->db->select('*');
 		$this->db->like('category_name', $keyword, 'after');
-		$res = $this->db->get('product_categories');
+		$res = $this->db->get('products');
 		return $res;		
 	}
 

@@ -8,7 +8,7 @@ else{
 ?>
 
 
-<center><div class="container" style="min-height: 700px; margin-top: 100px;">
+<center><div class="container" style="min-height: 700px; margin-top: 180px;">
 	
 <div class="card" style="width: 38rem; padding-top: 30px; padding-bottom: 30px; background-color: whitesmoke;">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
