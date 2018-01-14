@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3312
--- Generation Time: Jan 12, 2018 at 04:10 PM
+-- Generation Time: Jan 14, 2018 at 08:27 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -38,22 +38,29 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `category_name`, `product_name`, `image`) VALUES
-(1, 'woven tapes', 'Product 1', 'Product 1.jpg'),
-(2, 'draw cords', 'Product 2', 'desktop.png'),
-(3, 'knitted tapes', 'Product 3', 'laptop.png'),
-(4, 'woven tapes', 'Product 4', 'Product 4.jpg'),
-(5, 'draw cords', 'Product 5', 'desktop.png'),
-(10, 'knitted tapes', 'Product 6', 'laptop.png'),
-(11, 'woven tapes', 'Product 7', 'product.png'),
-(19, 'draw cords', 'Product 8', 'desktop.png'),
-(20, 'knitted tapes', 'Product 9', 'laptop.png'),
-(23, 'woven tapes', 'Product 10', 'product.png'),
-(24, 'draw cords', 'Product 11', 'desktop.png'),
-(26, 'knitted tapes', 'Product 12', 'laptop.png'),
-(28, 'woven tapes', 'Product 13', 'product.png'),
-(32, 'draw cords', 'Product 14', 'desktop.png'),
-(33, 'knitted tapes', 'Product 15', 'laptop.png'),
-(34, 'woven tapes', 'Product 16', 'product.png');
+(1, 'woven tapes', 'Product 1', 'woven1.jpg'),
+(2, 'draw cords', 'Product 2', 'draw1.jpg'),
+(3, 'knitted tapes', 'Product 3', 'knitted1.jpg'),
+(4, 'woven tapes', 'Product 4', 'woven2.jpg'),
+(5, 'draw cords', 'Product 5', 'draw2.jpg'),
+(10, 'knitted tapes', 'Product 6', 'knitted2.jpg'),
+(11, 'woven tapes', 'Product 7', 'woven3.jpg'),
+(19, 'draw cords', 'Product 8', 'draw3.jpg'),
+(20, 'knitted tapes', 'Product 9', 'knitted3.jpg'),
+(23, 'woven tapes', 'Product 10', 'woven4.jpg'),
+(24, 'draw cords', 'Product 11', 'draw4.jpg'),
+(26, 'knitted tapes', 'Product 12', 'knitted4.jpg'),
+(28, 'woven tapes', 'Product 13', 'woven5.jpg'),
+(32, 'draw cords', 'Product 14', 'draw5.jpg'),
+(33, 'knitted tapes', 'Product 15', 'knitted5.jpg'),
+(34, 'woven tapes', 'Product 16', 'woven6.jpg'),
+(35, 'woven tapes', 'Product 17', 'woven7.jpg'),
+(36, 'woven tapes', 'Product 18', 'woven8.jpg'),
+(37, 'woven tapes', 'Product 19', 'woven9.jpg'),
+(38, 'draw cords', 'Product 20', 'draw6.jpg'),
+(39, 'draw cords', 'Product 21', 'draw7.jpg'),
+(40, 'draw cords', 'Product 22', 'draw8.jpg'),
+(41, 'draw cords', 'Product 23', 'draw9.jpg');
 
 -- --------------------------------------------------------
 
@@ -98,7 +105,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT for table `user`
 --
