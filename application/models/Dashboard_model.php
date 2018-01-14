@@ -10,18 +10,6 @@ class Dashboard_model extends CI_Model {
 	    return $query->result();
 	}
 
-	public function add_item($image)
-	{
-        $data = array(
-        'product_id' => $this->input->post('product_id'),
-        'product_name' => $this->input->post('product_name'),
-        'description' => $this->input->post('description'),
-        'product_price' => $this->input->post('product_price'),
-        'image' =>$image
-        );
-        $this->db->insert('products',$data);			
-	}
-
 	public function delete_item($id)
 	{
 		  $this->db->where('product_id',$id);
@@ -40,7 +28,7 @@ class Dashboard_model extends CI_Model {
         //image
             $config['upload_path'] = './assets/img/products';
             $config['allowed_types'] = 'gif|jpg|png|jpeg';
-            $config['max_size'] = '2048';
+            $config['max_size'] = '2014';
             $config['max_width'] = '2000'; //max resolution width
             $config['max_height'] = '2000';  //max resolution height
 

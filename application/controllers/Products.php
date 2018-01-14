@@ -48,7 +48,6 @@ class Products extends CI_Controller {
 	public function browse()
 	{
         $this->load->library('pagination');
-        // $this->load->view('includes/inner_header');
         $config['base_url'] = 'http://localhost/Projects/CodeLanka/Products/browse';
         $config['total_rows'] = $this->Products_model->get_product_count();
         $config['per_page'] = 6;
