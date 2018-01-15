@@ -11,7 +11,7 @@ else{
 		<div class="col-lg-8"><h2 id="card-head">All Products</h2></div><br><br><br>
 		<div class="col-lg-4">
 			 <form method="POST" class="form-inline">
-				<input style="width: 250px;font-family: 'Oswald', sans-serif;margin-right: 10px;" id="searchBox" type="text" placeholder="insert at least 2 characters" name="searchBox" class="form-control">
+				<input style="width: 250px;font-family: 'Oswald', sans-serif;margin-right: 10px;" id="searchBox" type="text" placeholder="insert a category name" name="searchBox" class="form-control">
 				<a name="search_btn" id="search_btn" data-toggle="modal" data-target=".bd-example-modal-lg" class="btn btn-info">search</a>
 
 			 </form>
@@ -22,7 +22,7 @@ else{
 		<?php foreach ($product_items as $item) : ?>
 			<div class="col-lg-4">
 				<div class="card" style="width: 22rem; margin-bottom: 20px;"><br>
-				  <center><a data-lightbox="roadtrip" href="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>"><span class="roll" ></span><img id="card-img-top"  class="img-zoom" style="width: 120px;height: 150px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" alt="Card image cap"></a></center>	
+				  <center><a data-lightbox="roadtrip" href="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>"><span class="roll" ></span><img id="card-img-top"  class="img-zoom" style="width: 250px;height: 250px;" src="<?php echo base_url() ?>/assets/img/products/<?php echo $item->image?>" alt="Card image cap"></a></center>	
 				  <div class="card-body"><hr>
 				    <h5 class="text-center"><?php echo $item->category_name?></h5>
 				  </div>

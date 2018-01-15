@@ -24,7 +24,7 @@
 	    </div>
 	    <div class="carousel-item">
 	      <img class="d-block w-100" src="<?php echo base_url();?>assets/img/Machine/3.jpg" style="height: 600px;" alt="Third slide">
-	        <div class="carousel-caption d-none d-md-block">
+	        <div class="carousel-caption d-none d-md-block text-right">
 			    <p id="captionH" class="animated fadeInDownBig">Customized Items</p>
 			    <p id="captionSm" class="animated slideInDown">with your favourite designs</p><br>
 			    <!-- <a href="#woven" style="margin-bottom: 30px;" class="btn btn-light scroll animated slideInUp">More</a> -->

@@ -326,11 +326,11 @@ footer, #mainNav, nav .container .navbar-brand, #company-greeting, #card-head, #
 
 span.roll {
   background:center center no-repeat #fff;
-  height: 167px;
+  height: 250px;
   position: absolute;
   text-align: center;
   line-height: 153px;
-  width: 223px;
+  width: 250px;
   z-index: 10;  
 }
  
@@ -346,8 +346,8 @@ span.roll {
     font-size: 40px;
     padding-right: 0.5em;
     position: absolute;
-    top: 10px;
-    left: 45px;
+    top: 50px;
+    left: 110px;
 }
 
 span.roll-2 {
@@ -375,3 +375,10 @@ span.roll-2 {
     top: 50px;
     left: 110px;
 }
+
+/*.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}*/

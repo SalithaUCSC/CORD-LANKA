@@ -36,7 +36,7 @@ else{
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">WHO ARE WE?</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">CODE LANKA is one of the best companies that manufactures and supplies Twill Tapes, Draw Cords, Polyester Cords, Piping Cords, Webbing Tapes, Mobilan Tapes, Elastic Tapes Dyeing and Tipping. We are ready to deliver you the best productions according to your designs and requirements...</p>
+            <p class="text-faded mb-4">CORD LANKA is one of the best companies that manufactures and supplies Twill Tapes, Draw Cords, Polyester Cords, Piping Cords, Webbing Tapes, Mobilan Tapes, Elastic Tapes Dyeing and Tipping. We are ready to deliver you the best productions according to your designs and requirements...</p>
             <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
           </div>
         </div>
@@ -95,72 +95,72 @@ else{
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/products/woven3.jpg">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/products/woven3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    WOVEN TAPES
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/products/draw5.jpg">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/products/draw5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    DRAW CODES
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/products/knitted5.jpg">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/products/knitted5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    KNITTED TAPES
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/products/woven9.jpg">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/products/woven9.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    WOVEN TAPES
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/products/knitted3.jpg">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/products/knitted3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    KNITTED TAPES
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url() ?>assets/img/products/draw4.jpg">
+              <img class="img-fluid" src="<?php echo base_url() ?>assets/img/products/draw4.jpg" alt="">            
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                   DRAW CODES
                   </div>
                 </div>
               </div>

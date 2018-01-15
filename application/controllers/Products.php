@@ -197,7 +197,7 @@ class Products extends CI_Controller {
                 $output = '<center><div class="row">';
                 foreach($records->result_array() as $row){
                 	$output .= '<br>	
-                		<div class="col-md-4"><img class="img-thumbnail" style="width:80%;height:100%;" src="'.base_url().'assets/img/products/'.$row['image'].'"></div>';
+                		<div class="col-md-4"><img class="img-thumbnail" style="width: 250px;height: 250px; margin-bottom: 30px;" src="'.base_url().'assets/img/products/'.$row['image'].'"></div>';
                 }
                 $output .= '</div><br></center>';
                 echo $output;
