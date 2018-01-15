@@ -5,7 +5,8 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('login');
+    $data['title'] = "Cord Lanka | Login";
+    $this->load->view('login', $data);
 		$this->load->view('includes/footer');
 	}
 

@@ -13,6 +13,7 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 		$data['allitems'] = $this->Dashboard_model->get_all_products();
+		$data['title'] = "Cord Lanka | Admin Dashboard";
 		$this->load->view('dashboard', $data);	
 	}
 
@@ -24,6 +25,7 @@ class Dashboard extends CI_Controller {
 
 	public function view_items()
 	{
+		$data['title'] = "Cord Lanka | Admin Dashboard";
 		$this->load->view('includes/loggedin_header');
 		$data['allitems'] = $this->Dashboard_model->get_all_products();
 		$this->load->view('product_table', $data);
@@ -37,7 +39,7 @@ class Dashboard extends CI_Controller {
 			if ($this->Dashboard_model->update($product_id)) {
 
 				$this->session->set_flashdata('success','Product is updated');
-				redirect('Dashboard' , 'refresh');
+				redirect('Dashboard' , 'refresh');  
 
 			} else {
 				$this->session->set_flashdata('error','Product is not updated');
@@ -45,6 +47,7 @@ class Dashboard extends CI_Controller {
 			}
 		}
 			$data['row'] = $this->Dashboard_model->edit($product_id);
+			$data['title'] = "Cord Lanka | Edit Product";
 			$this->load->view('edit_item',$data);
 			$this->load->view('includes/footer');
 	}

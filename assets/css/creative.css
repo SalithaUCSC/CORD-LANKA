@@ -282,8 +282,9 @@ header.masthead {
 }
 
 .mb-4 {
-   font-size: 24px;
-  font-family: 'Oswald', sans-serif;  
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Oswald', sans-serif;  
 }
 
 #slogan p{

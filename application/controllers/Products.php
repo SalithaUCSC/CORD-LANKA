@@ -12,7 +12,8 @@ class Products extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('includes/header');
+		$data['title'] = "Cord Lanka | Home";
+		$this->load->view('includes/header', $data);
 		$this->load->view('home');
 		$this->load->view('includes/footer');
 	}
@@ -72,6 +73,7 @@ class Products extends CI_Controller {
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
         $this->pagination->initialize($config);
         $data['link'] = $this->pagination->create_links();
+        $data['title'] = "Cord Lanka | All Products";
         $data['product_items'] = $this->Products_model->products_pagination($config['per_page'], $page);
 		$this->load->view('products', $data);
 		$this->load->view('includes/footer');
@@ -107,6 +109,7 @@ class Products extends CI_Controller {
         $this->pagination->initialize($config);
         $data['link'] = $this->pagination->create_links();
         $data['woven'] = $this->Products_model->woven_tapes_pagination($config['per_page'], $page);
+        $data['title'] = "Cord Lanka | Woven Tapes";
 		$this->load->view('woven_tapes', $data);
 		$this->load->view('includes/footer');
 	}
@@ -141,6 +144,7 @@ class Products extends CI_Controller {
         $this->pagination->initialize($config);
         $data['link'] = $this->pagination->create_links();
         $data['draw'] = $this->Products_model->draw_cords_pagination($config['per_page'], $page);
+        $data['title'] = "Cord Lanka | Draw Cords";
 		$this->load->view('draw_cords', $data);
 		$this->load->view('includes/footer');
 	}
@@ -175,13 +179,14 @@ class Products extends CI_Controller {
         $this->pagination->initialize($config);
         $data['link'] = $this->pagination->create_links();
         $data['knitted'] = $this->Products_model->knitted_tapes_pagination($config['per_page'], $page);
+        $data['title'] = "Cord Lanka | Knitted Tapes";
 		$this->load->view('knitted_tapes', $data);
 		$this->load->view('includes/footer');
 	}
 	public function product($product_id)
 	{
 		$data['row'] = $this->Products_model->get_a_product($product_id);
-		// $this->load->view('includes/header');
+		$data['title'] = "Cord Lanka | Product Details";
 		$this->load->view('product',$data);
 		$this->load->view('includes/footer');
 	

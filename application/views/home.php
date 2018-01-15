@@ -36,7 +36,7 @@ else{
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">WHO ARE WE?</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">CORD LANKA is one of the best companies that manufactures and supplies Twill Tapes, Draw Cords, Polyester Cords, Piping Cords, Webbing Tapes, Mobilan Tapes, Elastic Tapes Dyeing and Tipping. We are ready to deliver you the best productions according to your designs and requirements...</p>
+            <p class="text-faded mb-4">CORD LANKA is one of the best companies that manufactures and supplies Twill Tapes, Draw Cords, Polyester Cords, Piping Cords, Webbing Tapes, Mobilan Tapes, Elastic Tapes Dyeing and Tipping. We are ready to deliver you the best productions</p><p class="text-faded mb-4 text-center">according to your designs and requirements</p>
             <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
           </div>
         </div>
@@ -54,7 +54,7 @@ else{
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <div class="service-box mt-5 mx-auto">
              <div class="card" style="width: 18rem;">
               <img class="card-img-top" style="margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/woven.jpg" alt="Card image cap"><br>
@@ -65,7 +65,7 @@ else{
             </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <div class="service-box mt-5 mx-auto">
              <div class="card" style="width: 18rem;">
               <img class="card-img-top" style="height:214px; margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/draw.jpg" alt="Card image cap"><br>
@@ -76,7 +76,7 @@ else{
             </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <div class="service-box mt-5 mx-auto">
              <div class="card" style="width: 18rem;">
               <img class="card-img-top" style="margin: auto;display: block;" src="<?php echo base_url()?>/assets/img/knitted.jpg" alt="Card image cap"><br>
