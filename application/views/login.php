@@ -9,7 +9,14 @@ else{
 
 
 <center><div class="container" style="min-height: 700px; margin-top: 180px;">
-	
+<?php if ($this->session->flashdata('errmsg')) {?>
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <?php echo $this->session->flashdata('errmsg'); ?>
+    </div>
+<?php  } ?>	
 <div class="card" style="width: 38rem; padding-top: 30px; padding-bottom: 30px; background-color: whitesmoke;">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
   <div class="card-body">
