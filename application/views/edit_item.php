@@ -21,7 +21,7 @@ else{
 	                    Browse… <input type="file" id="imgInp" name="userfile">
 	                </span>
 	            </span>
-	            <input type="text" class="form-control" readonly>
+	            <input type="text" class="form-control"  readonly>
 	        </div>
 	        <img id='img-upload' src="<?php echo base_url() ?>assets/img/products/<?php echo $row->image ?>">
 		</div>
