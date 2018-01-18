@@ -27,9 +27,9 @@ class Dashboard_model extends CI_Model {
         //image
         $config['upload_path'] = './assets/img/products';
         $config['allowed_types'] = 'gif|jpg|png|jpeg';
-        $config['max_size'] = '2014';
-        $config['max_width'] = '2000'; //max resolution width
-        $config['max_height'] = '2000';  //max resolution height
+        $config['max_size'] = '5120000'; // 5MB
+        $config['max_width'] = '20000000'; //max resolution width
+        $config['max_height'] = '20000000';  //max resolution height
 
         $this->load->library('upload', $config);
 
